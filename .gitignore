@@ -162,5 +162,8 @@ cython_debug/
 #.idea/
 
 *.pdf
+*.PDF
 *.txt
 *.tar.gz
+*/louvre
+*/louvre_dataset
