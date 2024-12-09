@@ -1,0 +1,4527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3139c2e8eec9e18e85859a6cabe3e0f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3139c2e8eec9e18e85859a6cabe3e0f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3139c2e8eec9e18e85859a6cabe3e0f = L.map(
+                "map_a3139c2e8eec9e18e85859a6cabe3e0f",
+                {
+                    center: [55.751244, 37.618423],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d1f673125f6c3191553ef3d0e038cc74 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d1f673125f6c3191553ef3d0e038cc74.addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var marker_c443c10df5c9fb42034896400d847363 = L.marker(
+                [55.79981, 37.53412],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_8d8fa9be7ce7c439f503eb3dca19c254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c443c10df5c9fb42034896400d847363.setIcon(icon_8d8fa9be7ce7c439f503eb3dca19c254);
+        
+    
+        var popup_f284b85c6175174ccc57a5258f723a96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5268c9ed348101b6fa2a9657260d99ba = $(`<div id="html_5268c9ed348101b6fa2a9657260d99ba" style="width: 100.0%; height: 100.0%;">Аэропорт (55.79981, 37.53412) - Северный административный округ</div>`)[0];
+                popup_f284b85c6175174ccc57a5258f723a96.setContent(html_5268c9ed348101b6fa2a9657260d99ba);
+            
+        
+
+        marker_c443c10df5c9fb42034896400d847363.bindPopup(popup_f284b85c6175174ccc57a5258f723a96)
+        ;
+
+        
+    
+    
+            var marker_c19e50da261d7247f747479b17706caf = L.marker(
+                [55.68808, 37.57501],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_825f195d885838f2013f8bfd9538c5b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c19e50da261d7247f747479b17706caf.setIcon(icon_825f195d885838f2013f8bfd9538c5b9);
+        
+    
+        var popup_4ba0333f9c2478b662fa3391f9e2a504 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6c86bc1275bc2f805f446e7428ce87 = $(`<div id="html_0a6c86bc1275bc2f805f446e7428ce87" style="width: 100.0%; height: 100.0%;">Академическая (55.68808, 37.57501) - Юго-Западный административный округ</div>`)[0];
+                popup_4ba0333f9c2478b662fa3391f9e2a504.setContent(html_0a6c86bc1275bc2f805f446e7428ce87);
+            
+        
+
+        marker_c19e50da261d7247f747479b17706caf.bindPopup(popup_4ba0333f9c2478b662fa3391f9e2a504)
+        ;
+
+        
+    
+    
+            var marker_f9ffec4d1bd92a8e293c599c0133efa6 = L.marker(
+                [55.80737, 37.63844],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_79643e3ef94888e059b52db5aedfbdc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f9ffec4d1bd92a8e293c599c0133efa6.setIcon(icon_79643e3ef94888e059b52db5aedfbdc9);
+        
+    
+        var popup_2bcb968208391cd1941e8cb2154fdd8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29c0de51a338732fe1682c8ae8630559 = $(`<div id="html_29c0de51a338732fe1682c8ae8630559" style="width: 100.0%; height: 100.0%;">Алексеевская (55.80737, 37.63844) - Северо-Восточный административный округ</div>`)[0];
+                popup_2bcb968208391cd1941e8cb2154fdd8a.setContent(html_29c0de51a338732fe1682c8ae8630559);
+            
+        
+
+        marker_f9ffec4d1bd92a8e293c599c0133efa6.bindPopup(popup_2bcb968208391cd1941e8cb2154fdd8a)
+        ;
+
+        
+    
+    
+            var marker_5ff746453a041f16d4d49762abaa44fe = L.marker(
+                [55.75219, 37.60836],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a096b3b964e7355ca7c780aa8575d06b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5ff746453a041f16d4d49762abaa44fe.setIcon(icon_a096b3b964e7355ca7c780aa8575d06b);
+        
+    
+        var popup_5d1780709b2b0eec2133dbde5333f952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8a4e2dcedc6ce645850f00a9ae04312 = $(`<div id="html_d8a4e2dcedc6ce645850f00a9ae04312" style="width: 100.0%; height: 100.0%;">Александровский сад (55.75219, 37.60836) - NOT FOUND</div>`)[0];
+                popup_5d1780709b2b0eec2133dbde5333f952.setContent(html_d8a4e2dcedc6ce645850f00a9ae04312);
+            
+        
+
+        marker_5ff746453a041f16d4d49762abaa44fe.bindPopup(popup_5d1780709b2b0eec2133dbde5333f952)
+        ;
+
+        
+    
+    
+            var marker_a79a1cfcedb46ae5ff76990bf924a4cd = L.marker(
+                [55.89504, 37.58605],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_80ff308d3ef18ec4b91c1013cdde688c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a79a1cfcedb46ae5ff76990bf924a4cd.setIcon(icon_80ff308d3ef18ec4b91c1013cdde688c);
+        
+    
+        var popup_f5e9413da98326089bed9cadc52b9112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6fd08dfd950251a35d0d00436da6c7a = $(`<div id="html_f6fd08dfd950251a35d0d00436da6c7a" style="width: 100.0%; height: 100.0%;">Алтуфьево (55.89504, 37.58605) - Северо-Восточный административный округ</div>`)[0];
+                popup_f5e9413da98326089bed9cadc52b9112.setContent(html_f6fd08dfd950251a35d0d00436da6c7a);
+            
+        
+
+        marker_a79a1cfcedb46ae5ff76990bf924a4cd.bindPopup(popup_f5e9413da98326089bed9cadc52b9112)
+        ;
+
+        
+    
+    
+            var marker_a5b418e164cf6569d303dbe69f3333be = L.marker(
+                [55.581818, 37.594978],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_8ace43ae3fa226aa303bfb66f9a1c850 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a5b418e164cf6569d303dbe69f3333be.setIcon(icon_8ace43ae3fa226aa303bfb66f9a1c850);
+        
+    
+        var popup_11ac4bbeb3c069ff6fe1a6c7781cd3cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d06a7cfddd2a18c9db06390e8b1ea7fc = $(`<div id="html_d06a7cfddd2a18c9db06390e8b1ea7fc" style="width: 100.0%; height: 100.0%;">Аннино (стр.) (55.581818, 37.594978) - NOT FOUND</div>`)[0];
+                popup_11ac4bbeb3c069ff6fe1a6c7781cd3cd.setContent(html_d06a7cfddd2a18c9db06390e8b1ea7fc);
+            
+        
+
+        marker_a5b418e164cf6569d303dbe69f3333be.bindPopup(popup_11ac4bbeb3c069ff6fe1a6c7781cd3cd)
+        ;
+
+        
+    
+    
+            var marker_71833c62f10908e3e9647ab9095600ac = L.marker(
+                [55.75228, 37.60357],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_75e9398b5f4937a4af4fdeea3ea0a14b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71833c62f10908e3e9647ab9095600ac.setIcon(icon_75e9398b5f4937a4af4fdeea3ea0a14b);
+        
+    
+        var popup_ef83553b7b7180c11d9ca01bc6aa8e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f63a74cd4c753372c08e40bcadf9d64c = $(`<div id="html_f63a74cd4c753372c08e40bcadf9d64c" style="width: 100.0%; height: 100.0%;">Арбатская (55.75228, 37.60357) - Центральный административный округ</div>`)[0];
+                popup_ef83553b7b7180c11d9ca01bc6aa8e5c.setContent(html_f63a74cd4c753372c08e40bcadf9d64c);
+            
+        
+
+        marker_71833c62f10908e3e9647ab9095600ac.bindPopup(popup_ef83553b7b7180c11d9ca01bc6aa8e5c)
+        ;
+
+        
+    
+    
+            var marker_ac55acc91ef82b4af220e2223134a5aa = L.marker(
+                [55.75208, 37.71677],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7932a1742147cbc3ae3b2fa16d101aee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_ac55acc91ef82b4af220e2223134a5aa.setIcon(icon_7932a1742147cbc3ae3b2fa16d101aee);
+        
+    
+        var popup_5d10bbc186110efe2ad56001b5efcf9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_885e72a4d22b19ed37b6fe9f46c144df = $(`<div id="html_885e72a4d22b19ed37b6fe9f46c144df" style="width: 100.0%; height: 100.0%;">Авиамоторная (55.75208, 37.71677) - Юго-Восточный административный округ</div>`)[0];
+                popup_5d10bbc186110efe2ad56001b5efcf9a.setContent(html_885e72a4d22b19ed37b6fe9f46c144df);
+            
+        
+
+        marker_ac55acc91ef82b4af220e2223134a5aa.bindPopup(popup_5d10bbc186110efe2ad56001b5efcf9a)
+        ;
+
+        
+    
+    
+            var marker_2c4af66d66d7d9c3f6ad90d41b87f970 = L.marker(
+                [55.70801, 37.65858],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0e82ccce59a1be0aeaf039fbc854ec16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c4af66d66d7d9c3f6ad90d41b87f970.setIcon(icon_0e82ccce59a1be0aeaf039fbc854ec16);
+        
+    
+        var popup_162d25f3e965e2eeb23227df96f7f60b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed81c6324ca12cb559d676128c4444c = $(`<div id="html_0ed81c6324ca12cb559d676128c4444c" style="width: 100.0%; height: 100.0%;">Автозаводская (55.70801, 37.65858) - Южный административный округ</div>`)[0];
+                popup_162d25f3e965e2eeb23227df96f7f60b.setContent(html_0ed81c6324ca12cb559d676128c4444c);
+            
+        
+
+        marker_2c4af66d66d7d9c3f6ad90d41b87f970.bindPopup(popup_162d25f3e965e2eeb23227df96f7f60b)
+        ;
+
+        
+    
+    
+            var marker_ce037fea821340ba2aea2a68549e4736 = L.marker(
+                [55.86814, 37.66292],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f9f611fc0d406425052a11987e6b45ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ce037fea821340ba2aea2a68549e4736.setIcon(icon_f9f611fc0d406425052a11987e6b45ef);
+        
+    
+        var popup_1c70a6f9adf5368d2f74a9c05b50862e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33347d5c8d9e1008ab3da858d2feb899 = $(`<div id="html_33347d5c8d9e1008ab3da858d2feb899" style="width: 100.0%; height: 100.0%;">Бабушкинская (55.86814, 37.66292) - Северо-Восточный административный округ</div>`)[0];
+                popup_1c70a6f9adf5368d2f74a9c05b50862e.setContent(html_33347d5c8d9e1008ab3da858d2feb899);
+            
+        
+
+        marker_ce037fea821340ba2aea2a68549e4736.bindPopup(popup_1c70a6f9adf5368d2f74a9c05b50862e)
+        ;
+
+        
+    
+    
+            var marker_c93f8fad8ce22581742952d42e2efabc = L.marker(
+                [55.74326, 37.49753],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_290468e4332818f1f20ce146bd9bb7db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_c93f8fad8ce22581742952d42e2efabc.setIcon(icon_290468e4332818f1f20ce146bd9bb7db);
+        
+    
+        var popup_91a9a11811f614a47b7bb5c43d6a3580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d68b2d142c461c5a54458b088d93cd5 = $(`<div id="html_2d68b2d142c461c5a54458b088d93cd5" style="width: 100.0%; height: 100.0%;">Багратионовская (55.74326, 37.49753) - Западный административный округ</div>`)[0];
+                popup_91a9a11811f614a47b7bb5c43d6a3580.setContent(html_2d68b2d142c461c5a54458b088d93cd5);
+            
+        
+
+        marker_c93f8fad8ce22581742952d42e2efabc.bindPopup(popup_91a9a11811f614a47b7bb5c43d6a3580)
+        ;
+
+        
+    
+    
+            var marker_1e736151de7835c0b12f7e83886844f1 = L.marker(
+                [55.76027, 37.58111],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_598f9df74f78321829afdf42f6c20085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e736151de7835c0b12f7e83886844f1.setIcon(icon_598f9df74f78321829afdf42f6c20085);
+        
+    
+        var popup_4b03be1522bb5badc9223786912381d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42c9098d089e54783162182a10d86214 = $(`<div id="html_42c9098d089e54783162182a10d86214" style="width: 100.0%; height: 100.0%;">Баррикадная (55.76027, 37.58111) - Центральный административный округ</div>`)[0];
+                popup_4b03be1522bb5badc9223786912381d2.setContent(html_42c9098d089e54783162182a10d86214);
+            
+        
+
+        marker_1e736151de7835c0b12f7e83886844f1.bindPopup(popup_4b03be1522bb5badc9223786912381d2)
+        ;
+
+        
+    
+    
+            var marker_caf002859aaf12268a551fa4899cab21 = L.marker(
+                [55.77228, 37.67857],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a6ab607cddc28102497581b2c4d5cad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_caf002859aaf12268a551fa4899cab21.setIcon(icon_a6ab607cddc28102497581b2c4d5cad2);
+        
+    
+        var popup_282c80d02c7edf165934ca77f45a0028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b284174d8095a6aaa4e7246d398fb0b9 = $(`<div id="html_b284174d8095a6aaa4e7246d398fb0b9" style="width: 100.0%; height: 100.0%;">Бауманская (55.77228, 37.67857) - Центральный административный округ</div>`)[0];
+                popup_282c80d02c7edf165934ca77f45a0028.setContent(html_b284174d8095a6aaa4e7246d398fb0b9);
+            
+        
+
+        marker_caf002859aaf12268a551fa4899cab21.bindPopup(popup_282c80d02c7edf165934ca77f45a0028)
+        ;
+
+        
+    
+    
+            var marker_f1502add009cffbcd1733a5b006f98ae = L.marker(
+                [55.77378, 37.54412],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_4e469d8e22cfc15ed817f4a5a87d6492 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f1502add009cffbcd1733a5b006f98ae.setIcon(icon_4e469d8e22cfc15ed817f4a5a87d6492);
+        
+    
+        var popup_1880d0fd7932abdb799b976911bfad24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feccf260e1353155aa113118df644755 = $(`<div id="html_feccf260e1353155aa113118df644755" style="width: 100.0%; height: 100.0%;">Беговая (55.77378, 37.54412) - Северный административный округ</div>`)[0];
+                popup_1880d0fd7932abdb799b976911bfad24.setContent(html_feccf260e1353155aa113118df644755);
+            
+        
+
+        marker_f1502add009cffbcd1733a5b006f98ae.bindPopup(popup_1880d0fd7932abdb799b976911bfad24)
+        ;
+
+        
+    
+    
+            var marker_9a8437bfc725eb7d8fcb534f82d417b5 = L.marker(
+                [55.77492, 37.58207],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7713ec69aae53c88a454565840ff34ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9a8437bfc725eb7d8fcb534f82d417b5.setIcon(icon_7713ec69aae53c88a454565840ff34ba);
+        
+    
+        var popup_5f0efc1be434432c646fdac309f30c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c112236645de6bc731cd291c70b0e2a = $(`<div id="html_9c112236645de6bc731cd291c70b0e2a" style="width: 100.0%; height: 100.0%;">Белорусская (55.77492, 37.58207) - NOT FOUND</div>`)[0];
+                popup_5f0efc1be434432c646fdac309f30c72.setContent(html_9c112236645de6bc731cd291c70b0e2a);
+            
+        
+
+        marker_9a8437bfc725eb7d8fcb534f82d417b5.bindPopup(popup_5f0efc1be434432c646fdac309f30c72)
+        ;
+
+        
+    
+    
+            var marker_685ec997f91c45ea069adbba6908f0af = L.marker(
+                [55.64371, 37.52762],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f5dba81a11ac153aaab8ce5f38cc8e95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_685ec997f91c45ea069adbba6908f0af.setIcon(icon_f5dba81a11ac153aaab8ce5f38cc8e95);
+        
+    
+        var popup_1b85ef9b22b6debb16e44e5e87b5b587 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1e11c33a04be52246a2776aeb6c81f0 = $(`<div id="html_d1e11c33a04be52246a2776aeb6c81f0" style="width: 100.0%; height: 100.0%;">Беляево (55.64371, 37.52762) - Юго-Западный административный округ</div>`)[0];
+                popup_1b85ef9b22b6debb16e44e5e87b5b587.setContent(html_d1e11c33a04be52246a2776aeb6c81f0);
+            
+        
+
+        marker_685ec997f91c45ea069adbba6908f0af.bindPopup(popup_1b85ef9b22b6debb16e44e5e87b5b587)
+        ;
+
+        
+    
+    
+            var marker_6bf246ecfef8aa35da7b4acf2238606d = L.marker(
+                [55.88294, 37.60523],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d2cc74e88a9523a21f6c83718eb5d660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6bf246ecfef8aa35da7b4acf2238606d.setIcon(icon_d2cc74e88a9523a21f6c83718eb5d660);
+        
+    
+        var popup_1c814ede5db6a61bac48c40814eb269d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6aa91407703105965c8a5694726cc04 = $(`<div id="html_b6aa91407703105965c8a5694726cc04" style="width: 100.0%; height: 100.0%;">Бибирево (55.88294, 37.60523) - Северо-Восточный административный округ</div>`)[0];
+                popup_1c814ede5db6a61bac48c40814eb269d.setContent(html_b6aa91407703105965c8a5694726cc04);
+            
+        
+
+        marker_6bf246ecfef8aa35da7b4acf2238606d.bindPopup(popup_1c814ede5db6a61bac48c40814eb269d)
+        ;
+
+        
+    
+    
+            var marker_351bdd9763e71c256215afad6b0124b2 = L.marker(
+                [55.75211, 37.60988],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_822aea9cf5a5f0062e0b8eecd1ad2ce0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_351bdd9763e71c256215afad6b0124b2.setIcon(icon_822aea9cf5a5f0062e0b8eecd1ad2ce0);
+        
+    
+        var popup_031ecd104d9ee200be3e5f64f7ee40d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ded6fdb9c298bbb642cceaf26036643 = $(`<div id="html_5ded6fdb9c298bbb642cceaf26036643" style="width: 100.0%; height: 100.0%;">Библиотека им. Ленина (55.75211, 37.60988) - Центральный административный округ</div>`)[0];
+                popup_031ecd104d9ee200be3e5f64f7ee40d3.setContent(html_5ded6fdb9c298bbb642cceaf26036643);
+            
+        
+
+        marker_351bdd9763e71c256215afad6b0124b2.bindPopup(popup_031ecd104d9ee200be3e5f64f7ee40d3)
+        ;
+
+        
+    
+    
+            var marker_6930ce968688e22e92de450bc0ea3438 = L.marker(
+                [55.60029, 37.55735],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7ee6b420635f1a99d965fd0dc39031cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6930ce968688e22e92de450bc0ea3438.setIcon(icon_7ee6b420635f1a99d965fd0dc39031cb);
+        
+    
+        var popup_640fde13a3822ab38d60688aeaf85dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5302154aeaa9926426e0f047cb9b7f3 = $(`<div id="html_e5302154aeaa9926426e0f047cb9b7f3" style="width: 100.0%; height: 100.0%;">Битцевский парк (55.60029, 37.55735) - NOT FOUND</div>`)[0];
+                popup_640fde13a3822ab38d60688aeaf85dc8.setContent(html_e5302154aeaa9926426e0f047cb9b7f3);
+            
+        
+
+        marker_6930ce968688e22e92de450bc0ea3438.bindPopup(popup_640fde13a3822ab38d60688aeaf85dc8)
+        ;
+
+        
+    
+    
+            var marker_659cbd3cf13423836a45bf5fe848d0d9 = L.marker(
+                [55.75034, 37.60857],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_510c8f6565d7a7e8db3669d939cee439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_659cbd3cf13423836a45bf5fe848d0d9.setIcon(icon_510c8f6565d7a7e8db3669d939cee439);
+        
+    
+        var popup_f3cc9caecacb9c34afc5c0a134ec811e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b791a876a51c545e05be1ba02a8573 = $(`<div id="html_12b791a876a51c545e05be1ba02a8573" style="width: 100.0%; height: 100.0%;">Боровицкая (55.75034, 37.60857) - Центральный административный округ</div>`)[0];
+                popup_f3cc9caecacb9c34afc5c0a134ec811e.setContent(html_12b791a876a51c545e05be1ba02a8573);
+            
+        
+
+        marker_659cbd3cf13423836a45bf5fe848d0d9.bindPopup(popup_f3cc9caecacb9c34afc5c0a134ec811e)
+        ;
+
+        
+    
+    
+            var marker_9435411686ccdd660ab9df195c59247c = L.marker(
+                [55.84649, 37.63914],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_93558d1a623b10c8ef4c8180f84ed620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9435411686ccdd660ab9df195c59247c.setIcon(icon_93558d1a623b10c8ef4c8180f84ed620);
+        
+    
+        var popup_65e49870861d17a35e73406676032e58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b560b0eefea3f7b3b2ab8214a0b42189 = $(`<div id="html_b560b0eefea3f7b3b2ab8214a0b42189" style="width: 100.0%; height: 100.0%;">Ботанический сад (55.84649, 37.63914) - Северо-Восточный административный округ</div>`)[0];
+                popup_65e49870861d17a35e73406676032e58.setContent(html_b560b0eefea3f7b3b2ab8214a0b42189);
+            
+        
+
+        marker_9435411686ccdd660ab9df195c59247c.bindPopup(popup_65e49870861d17a35e73406676032e58)
+        ;
+
+        
+    
+    
+            var marker_f0f2cdc8c641d5f1e6027b43c7da78c0 = L.marker(
+                [55.631363, 37.75174],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0aea1d2cca19a2d5ea9052aa577079e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f0f2cdc8c641d5f1e6027b43c7da78c0.setIcon(icon_0aea1d2cca19a2d5ea9052aa577079e9);
+        
+    
+        var popup_b03df43225c92a4f549217c6175556c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01584f3f9862ac9894ab795c75386be2 = $(`<div id="html_01584f3f9862ac9894ab795c75386be2" style="width: 100.0%; height: 100.0%;">Братеево (стр.) (55.631363, 37.75174) - NOT FOUND</div>`)[0];
+                popup_b03df43225c92a4f549217c6175556c7.setContent(html_01584f3f9862ac9894ab795c75386be2);
+            
+        
+
+        marker_f0f2cdc8c641d5f1e6027b43c7da78c0.bindPopup(popup_b03df43225c92a4f549217c6175556c7)
+        ;
+
+        
+    
+    
+            var marker_a1a29d4218025f77c315c9a2b8da324c = L.marker(
+                [55.66126, 37.7509],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b36671d6b04252e785227d4eab529651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a1a29d4218025f77c315c9a2b8da324c.setIcon(icon_b36671d6b04252e785227d4eab529651);
+        
+    
+        var popup_7c5241de5bcb47fb4eef043bc0f446bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f27c855b98afdfb9981f09c1ea17dc3d = $(`<div id="html_f27c855b98afdfb9981f09c1ea17dc3d" style="width: 100.0%; height: 100.0%;">Братиславская (55.66126, 37.7509) - Юго-Восточный административный округ</div>`)[0];
+                popup_7c5241de5bcb47fb4eef043bc0f446bd.setContent(html_f27c855b98afdfb9981f09c1ea17dc3d);
+            
+        
+
+        marker_a1a29d4218025f77c315c9a2b8da324c.bindPopup(popup_7c5241de5bcb47fb4eef043bc0f446bd)
+        ;
+
+        
+    
+    
+            var marker_9a88fe1252bf351a1cfda888bbc9ef72 = L.marker(
+                [55.76596, 37.6075],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_951e51cc32a4c589cc3691bddb77b44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a88fe1252bf351a1cfda888bbc9ef72.setIcon(icon_951e51cc32a4c589cc3691bddb77b44f);
+        
+    
+        var popup_98fe337eb9afc0b06afedc1b815338c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c89a1fabaf4d569c89278420cd04821f = $(`<div id="html_c89a1fabaf4d569c89278420cd04821f" style="width: 100.0%; height: 100.0%;">Чеховская (55.76596, 37.6075) - Центральный административный округ</div>`)[0];
+                popup_98fe337eb9afc0b06afedc1b815338c1.setContent(html_c89a1fabaf4d569c89278420cd04821f);
+            
+        
+
+        marker_9a88fe1252bf351a1cfda888bbc9ef72.bindPopup(popup_98fe337eb9afc0b06afedc1b815338c1)
+        ;
+
+        
+    
+    
+            var marker_8670394d1d2a0ccaa345c9cceae22b99 = L.marker(
+                [55.802, 37.74438],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0994dfad5c90618e8a61f41d6dd73ee1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8670394d1d2a0ccaa345c9cceae22b99.setIcon(icon_0994dfad5c90618e8a61f41d6dd73ee1);
+        
+    
+        var popup_ae551a10f1a177ae8e0ba9066c537d71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0a4628681ac0b622bc8c84ff66f4321 = $(`<div id="html_c0a4628681ac0b622bc8c84ff66f4321" style="width: 100.0%; height: 100.0%;">Черкизовская (55.802, 37.74438) - Восточный административный округ</div>`)[0];
+                popup_ae551a10f1a177ae8e0ba9066c537d71.setContent(html_c0a4628681ac0b622bc8c84ff66f4321);
+            
+        
+
+        marker_8670394d1d2a0ccaa345c9cceae22b99.bindPopup(popup_ae551a10f1a177ae8e0ba9066c537d71)
+        ;
+
+        
+    
+    
+            var marker_8519bef8914aa0037e3ee5d41a8173cb = L.marker(
+                [55.63978, 37.60893],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_793163209668bef14804ccdb40bf7315 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8519bef8914aa0037e3ee5d41a8173cb.setIcon(icon_793163209668bef14804ccdb40bf7315);
+        
+    
+        var popup_85edae396c123c710ecc0d8cadccd7ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64a66d298818181b268f936962d0677f = $(`<div id="html_64a66d298818181b268f936962d0677f" style="width: 100.0%; height: 100.0%;">Чертаново (55.63978, 37.60893) - NOT FOUND</div>`)[0];
+                popup_85edae396c123c710ecc0d8cadccd7ba.setContent(html_64a66d298818181b268f936962d0677f);
+            
+        
+
+        marker_8519bef8914aa0037e3ee5d41a8173cb.bindPopup(popup_85edae396c123c710ecc0d8cadccd7ba)
+        ;
+
+        
+    
+    
+            var marker_1b1554b24da65919eff79df3103445e7 = L.marker(
+                [55.76426, 37.6389],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ea61a1c9e66011fc349a477fa9568a3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1b1554b24da65919eff79df3103445e7.setIcon(icon_ea61a1c9e66011fc349a477fa9568a3e);
+        
+    
+        var popup_e64f80a73745216668003b57850116fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6003dea4a58e8b4b0d3c70cbeef13043 = $(`<div id="html_6003dea4a58e8b4b0d3c70cbeef13043" style="width: 100.0%; height: 100.0%;">Чистые пруды (55.76426, 37.6389) - NOT FOUND</div>`)[0];
+                popup_e64f80a73745216668003b57850116fb.setContent(html_6003dea4a58e8b4b0d3c70cbeef13043);
+            
+        
+
+        marker_1b1554b24da65919eff79df3103445e7.bindPopup(popup_e64f80a73745216668003b57850116fb)
+        ;
+
+        
+    
+    
+            var marker_f7416f5bbd349374d7992ddeed63cf46 = L.marker(
+                [55.756218, 37.659375],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_986eae16278d8789c0ac0213b239cbc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f7416f5bbd349374d7992ddeed63cf46.setIcon(icon_986eae16278d8789c0ac0213b239cbc3);
+        
+    
+        var popup_dcb54b63ee7dcbcd77e1dbe7e82beba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70e871a47f2b79fd57c568f1cc9a4759 = $(`<div id="html_70e871a47f2b79fd57c568f1cc9a4759" style="width: 100.0%; height: 100.0%;">Чкаловская (55.756218, 37.659375) - NOT FOUND</div>`)[0];
+                popup_dcb54b63ee7dcbcd77e1dbe7e82beba2.setContent(html_70e871a47f2b79fd57c568f1cc9a4759);
+            
+        
+
+        marker_f7416f5bbd349374d7992ddeed63cf46.bindPopup(popup_dcb54b63ee7dcbcd77e1dbe7e82beba2)
+        ;
+
+        
+    
+    
+            var marker_9555a0cc597ba0f381ed8c017f48606f = L.marker(
+                [55.78867, 37.55936],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d1e6d05e86808a15b5112d7323d8026f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9555a0cc597ba0f381ed8c017f48606f.setIcon(icon_d1e6d05e86808a15b5112d7323d8026f);
+        
+    
+        var popup_e201a75f6fff03b8772caf0a37a5ad1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e64b3df11817423e223fb4922bb19ce = $(`<div id="html_4e64b3df11817423e223fb4922bb19ce" style="width: 100.0%; height: 100.0%;">Динамо (55.78867, 37.55936) - Северный административный округ</div>`)[0];
+                popup_e201a75f6fff03b8772caf0a37a5ad1e.setContent(html_4e64b3df11817423e223fb4922bb19ce);
+            
+        
+
+        marker_9555a0cc597ba0f381ed8c017f48606f.bindPopup(popup_e201a75f6fff03b8772caf0a37a5ad1e)
+        ;
+
+        
+    
+    
+            var marker_20b9803c0344efb953a8aa45aebf8788 = L.marker(
+                [55.567759, 37.575724],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e172a6912ce8294aa9f0e099495bb1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_20b9803c0344efb953a8aa45aebf8788.setIcon(icon_e172a6912ce8294aa9f0e099495bb1dc);
+        
+    
+        var popup_f2452b00ae7b574a728b1d2d02d5cc5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae1465898e2a81a0e76ec82352dd869c = $(`<div id="html_ae1465898e2a81a0e76ec82352dd869c" style="width: 100.0%; height: 100.0%;">Бульвар Дмитрия Донского (стр.) (55.567759, 37.575724) - NOT FOUND</div>`)[0];
+                popup_f2452b00ae7b574a728b1d2d02d5cc5e.setContent(html_ae1465898e2a81a0e76ec82352dd869c);
+            
+        
+
+        marker_20b9803c0344efb953a8aa45aebf8788.bindPopup(popup_f2452b00ae7b574a728b1d2d02d5cc5e)
+        ;
+
+        
+    
+    
+            var marker_1ecc829da417e799650fc2740f58185f = L.marker(
+                [55.80756, 37.57959],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a94d5b953ffe3ca0342d03b8325eb6b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1ecc829da417e799650fc2740f58185f.setIcon(icon_a94d5b953ffe3ca0342d03b8325eb6b1);
+        
+    
+        var popup_d64afccbdd1c153a30bb1da31ff5148b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8a38e0ba9fe1e5ba71c2baaa050dfb3 = $(`<div id="html_c8a38e0ba9fe1e5ba71c2baaa050dfb3" style="width: 100.0%; height: 100.0%;">Дмитровская (55.80756, 37.57959) - Северо-Восточный административный округ</div>`)[0];
+                popup_d64afccbdd1c153a30bb1da31ff5148b.setContent(html_c8a38e0ba9fe1e5ba71c2baaa050dfb3);
+            
+        
+
+        marker_1ecc829da417e799650fc2740f58185f.bindPopup(popup_d64afccbdd1c153a30bb1da31ff5148b)
+        ;
+
+        
+    
+    
+            var marker_58689212cc73f61e0f6d8ae2fce5d62d = L.marker(
+                [55.72886, 37.62356],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_8069abd26c456ba85558d7861015222a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58689212cc73f61e0f6d8ae2fce5d62d.setIcon(icon_8069abd26c456ba85558d7861015222a);
+        
+    
+        var popup_7666cc2c70aa3c874a2928aef2a7f966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c4973d92bd23a8715c726a7eb499d35 = $(`<div id="html_2c4973d92bd23a8715c726a7eb499d35" style="width: 100.0%; height: 100.0%;">Добрынинская (55.72886, 37.62356) - Центральный административный округ</div>`)[0];
+                popup_7666cc2c70aa3c874a2928aef2a7f966.setContent(html_2c4973d92bd23a8715c726a7eb499d35);
+            
+        
+
+        marker_58689212cc73f61e0f6d8ae2fce5d62d.bindPopup(popup_7666cc2c70aa3c874a2928aef2a7f966)
+        ;
+
+        
+    
+    
+            var marker_f3e3eabdbba5570562f4d09283ddf286 = L.marker(
+                [55.61009, 37.71612],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_cc9caf9d7dce6eb64264c802f0b895df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3e3eabdbba5570562f4d09283ddf286.setIcon(icon_cc9caf9d7dce6eb64264c802f0b895df);
+        
+    
+        var popup_fad2c5488de79cd18cbc4edf4ef2d446 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3556cb655d554ba997300155f528ec79 = $(`<div id="html_3556cb655d554ba997300155f528ec79" style="width: 100.0%; height: 100.0%;">Домодедовская (55.61009, 37.71612) - Южный административный округ</div>`)[0];
+                popup_fad2c5488de79cd18cbc4edf4ef2d446.setContent(html_3556cb655d554ba997300155f528ec79);
+            
+        
+
+        marker_f3e3eabdbba5570562f4d09283ddf286.bindPopup(popup_fad2c5488de79cd18cbc4edf4ef2d446)
+        ;
+
+        
+    
+    
+            var marker_f9839e3ee40f2c33cdf844c64dca5820 = L.marker(
+                [55.782438, 37.612747],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_22c95ebf9007f1855b2d94d6a6a4d11a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f9839e3ee40f2c33cdf844c64dca5820.setIcon(icon_22c95ebf9007f1855b2d94d6a6a4d11a);
+        
+    
+        var popup_ec9fc1b9e651c761c93ce53bf94699cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_481a40e6390c8202a6c675dbcf543833 = $(`<div id="html_481a40e6390c8202a6c675dbcf543833" style="width: 100.0%; height: 100.0%;">Достоевская (стр.) (55.782438, 37.612747) - NOT FOUND</div>`)[0];
+                popup_ec9fc1b9e651c761c93ce53bf94699cb.setContent(html_481a40e6390c8202a6c675dbcf543833);
+            
+        
+
+        marker_f9839e3ee40f2c33cdf844c64dca5820.bindPopup(popup_ec9fc1b9e651c761c93ce53bf94699cb)
+        ;
+
+        
+    
+    
+            var marker_ce189e878c28cef1bd6f346bf692c90c = L.marker(
+                [55.719732, 37.676915],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e5774d41b6ba13d35d73fb4a1db651c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_ce189e878c28cef1bd6f346bf692c90c.setIcon(icon_e5774d41b6ba13d35d73fb4a1db651c7);
+        
+    
+        var popup_3bec938d24c7fa8a36e20ba20583b864 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35989fd24b2db88b1ea155aef2cc9052 = $(`<div id="html_35989fd24b2db88b1ea155aef2cc9052" style="width: 100.0%; height: 100.0%;">Дубровка (55.719732, 37.676915) - Юго-Восточный административный округ</div>`)[0];
+                popup_3bec938d24c7fa8a36e20ba20583b864.setContent(html_35989fd24b2db88b1ea155aef2cc9052);
+            
+        
+
+        marker_ce189e878c28cef1bd6f346bf692c90c.bindPopup(popup_3bec938d24c7fa8a36e20ba20583b864)
+        ;
+
+        
+    
+    
+            var marker_24d7ee8e1b57c869be57aefae74e797d = L.marker(
+                [55.78177, 37.70471],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_82e0d1e996e8c762adea3946be3fef5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_24d7ee8e1b57c869be57aefae74e797d.setIcon(icon_82e0d1e996e8c762adea3946be3fef5d);
+        
+    
+        var popup_7635151f5b97a98aa2c44f31f69ddf08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dada0e22f7b79667649fba959801b472 = $(`<div id="html_dada0e22f7b79667649fba959801b472" style="width: 100.0%; height: 100.0%;">Электрозаводская (55.78177, 37.70471) - Восточный административный округ</div>`)[0];
+                popup_7635151f5b97a98aa2c44f31f69ddf08.setContent(html_dada0e22f7b79667649fba959801b472);
+            
+        
+
+        marker_24d7ee8e1b57c869be57aefae74e797d.bindPopup(popup_7635151f5b97a98aa2c44f31f69ddf08)
+        ;
+
+        
+    
+    
+            var marker_0bb3855d2e035efd494bcdca24467074 = L.marker(
+                [55.75837, 37.75155],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_c244ed8513b14ac7a2b7446814beaa12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0bb3855d2e035efd494bcdca24467074.setIcon(icon_c244ed8513b14ac7a2b7446814beaa12);
+        
+    
+        var popup_e054e7af8af7f25762c2fee87c883296 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15601b3ec3bb2012d0cb0f7987758546 = $(`<div id="html_15601b3ec3bb2012d0cb0f7987758546" style="width: 100.0%; height: 100.0%;">Шоссе энтузиастов (55.75837, 37.75155) - NOT FOUND</div>`)[0];
+                popup_e054e7af8af7f25762c2fee87c883296.setContent(html_15601b3ec3bb2012d0cb0f7987758546);
+            
+        
+
+        marker_0bb3855d2e035efd494bcdca24467074.bindPopup(popup_e054e7af8af7f25762c2fee87c883296)
+        ;
+
+        
+    
+    
+            var marker_9149df2aed33b356ebc1035ef16a7aa6 = L.marker(
+                [55.73953, 37.48366],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e5ae829d18eef96c13ddda28d65109a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9149df2aed33b356ebc1035ef16a7aa6.setIcon(icon_e5ae829d18eef96c13ddda28d65109a3);
+        
+    
+        var popup_b4bcdba7fd6e05e8835901a35f13abe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e17ef02cfb7200c811e69bf120b4ee0a = $(`<div id="html_e17ef02cfb7200c811e69bf120b4ee0a" style="width: 100.0%; height: 100.0%;">Филевский парк (55.73953, 37.48366) - NOT FOUND</div>`)[0];
+                popup_b4bcdba7fd6e05e8835901a35f13abe8.setContent(html_e17ef02cfb7200c811e69bf120b4ee0a);
+            
+        
+
+        marker_9149df2aed33b356ebc1035ef16a7aa6.bindPopup(popup_b4bcdba7fd6e05e8835901a35f13abe8)
+        ;
+
+        
+    
+    
+            var marker_9ff9fab07f83385f7a0912b5bc39daa7 = L.marker(
+                [55.74673, 37.51384],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3c40dbfd237326cb4858ffd88d5f9a69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_9ff9fab07f83385f7a0912b5bc39daa7.setIcon(icon_3c40dbfd237326cb4858ffd88d5f9a69);
+        
+    
+        var popup_c73307cee9b634fe5db7a30d45e34ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de5ed4111789b541192596494d3101e = $(`<div id="html_6de5ed4111789b541192596494d3101e" style="width: 100.0%; height: 100.0%;">Фили (55.74673, 37.51384) - Западный административный округ</div>`)[0];
+                popup_c73307cee9b634fe5db7a30d45e34ef8.setContent(html_6de5ed4111789b541192596494d3101e);
+            
+        
+
+        marker_9ff9fab07f83385f7a0912b5bc39daa7.bindPopup(popup_c73307cee9b634fe5db7a30d45e34ef8)
+        ;
+
+        
+    
+    
+            var marker_a290c0af11baaad94e65e24e3184a502 = L.marker(
+                [55.72718, 37.58036],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_4d95162e72c7929cc645797b7f314f5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a290c0af11baaad94e65e24e3184a502.setIcon(icon_4d95162e72c7929cc645797b7f314f5c);
+        
+    
+        var popup_3b2a6416ad225785ffdfd7ecc3067989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1efbc0a5d69eaaf948f2cd19bbb946c4 = $(`<div id="html_1efbc0a5d69eaaf948f2cd19bbb946c4" style="width: 100.0%; height: 100.0%;">Фрунзенская (55.72718, 37.58036) - Центральный административный округ</div>`)[0];
+                popup_3b2a6416ad225785ffdfd7ecc3067989.setContent(html_1efbc0a5d69eaaf948f2cd19bbb946c4);
+            
+        
+
+        marker_a290c0af11baaad94e65e24e3184a502.bindPopup(popup_3b2a6416ad225785ffdfd7ecc3067989)
+        ;
+
+        
+    
+    
+            var marker_17a5fdd1a905ed9d5cb7ac9b01e151f9 = L.marker(
+                [55.78768, 37.78329],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_1b8d394db24bf29335a5c40d2908737f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_17a5fdd1a905ed9d5cb7ac9b01e151f9.setIcon(icon_1b8d394db24bf29335a5c40d2908737f);
+        
+    
+        var popup_17d706b50b9d1cc9ee83252d14e1aa52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_572508b68e3f685b2d1251f8f8066b1e = $(`<div id="html_572508b68e3f685b2d1251f8f8066b1e" style="width: 100.0%; height: 100.0%;">Измайловская (55.78768, 37.78329) - Восточный административный округ</div>`)[0];
+                popup_17d706b50b9d1cc9ee83252d14e1aa52.setContent(html_572508b68e3f685b2d1251f8f8066b1e);
+            
+        
+
+        marker_17a5fdd1a905ed9d5cb7ac9b01e151f9.bindPopup(popup_17d706b50b9d1cc9ee83252d14e1aa52)
+        ;
+
+        
+    
+    
+            var marker_d11359dbad8412de2c61ddaefbb7b815 = L.marker(
+                [55.596141, 37.59981],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_df437fbfcb3bfa511bdad3cf6ccc45c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d11359dbad8412de2c61ddaefbb7b815.setIcon(icon_df437fbfcb3bfa511bdad3cf6ccc45c2);
+        
+    
+        var popup_b58fece10267e9c47ad4872b39f04da6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1198aa727d3e83309c21947d2060950b = $(`<div id="html_1198aa727d3e83309c21947d2060950b" style="width: 100.0%; height: 100.0%;">Улица Академика Янгеля (стр.) (55.596141, 37.59981) - NOT FOUND</div>`)[0];
+                popup_b58fece10267e9c47ad4872b39f04da6.setContent(html_1198aa727d3e83309c21947d2060950b);
+            
+        
+
+        marker_d11359dbad8412de2c61ddaefbb7b815.bindPopup(popup_b58fece10267e9c47ad4872b39f04da6)
+        ;
+
+        
+    
+    
+            var marker_9d22ff5fd617ca4b604db8d65406125f = L.marker(
+                [55.65332, 37.59722],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d91fc86fd7e076e43a90014642552112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9d22ff5fd617ca4b604db8d65406125f.setIcon(icon_d91fc86fd7e076e43a90014642552112);
+        
+    
+        var popup_7fc24ca5cf2e8d4f50d2eae6d5dc503a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2927527b139c0781455c7ffa474e6678 = $(`<div id="html_2927527b139c0781455c7ffa474e6678" style="width: 100.0%; height: 100.0%;">Каховская (55.65332, 37.59722) - Юго-Западный административный округ</div>`)[0];
+                popup_7fc24ca5cf2e8d4f50d2eae6d5dc503a.setContent(html_2927527b139c0781455c7ffa474e6678);
+            
+        
+
+        marker_9d22ff5fd617ca4b604db8d65406125f.bindPopup(popup_7fc24ca5cf2e8d4f50d2eae6d5dc503a)
+        ;
+
+        
+    
+    
+            var marker_d5f741d141108b6c8da5db2f5cdf1bdb = L.marker(
+                [55.65566, 37.53923],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_1e058caf042cf19a589984f326804144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d5f741d141108b6c8da5db2f5cdf1bdb.setIcon(icon_1e058caf042cf19a589984f326804144);
+        
+    
+        var popup_dc9568ae1fed5b8bebf1d91ec43f0b83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9daaf751768c5cc694601df212da7d9 = $(`<div id="html_e9daaf751768c5cc694601df212da7d9" style="width: 100.0%; height: 100.0%;">Калужская (55.65566, 37.53923) - Юго-Западный административный округ</div>`)[0];
+                popup_dc9568ae1fed5b8bebf1d91ec43f0b83.setContent(html_e9daaf751768c5cc694601df212da7d9);
+            
+        
+
+        marker_d5f741d141108b6c8da5db2f5cdf1bdb.bindPopup(popup_dc9568ae1fed5b8bebf1d91ec43f0b83)
+        ;
+
+        
+    
+    
+            var marker_a7f35be02af1126de3b50e6262b4ee7f = L.marker(
+                [55.6343, 37.65632],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_aac283d7ccce6bce965e5126c0538180 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7f35be02af1126de3b50e6262b4ee7f.setIcon(icon_aac283d7ccce6bce965e5126c0538180);
+        
+    
+        var popup_a3db4d7b2db4687691fe46609bbb8ede = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac4cddafa25d3cd40a829bb47dcc4741 = $(`<div id="html_ac4cddafa25d3cd40a829bb47dcc4741" style="width: 100.0%; height: 100.0%;">Кантемировская (55.6343, 37.65632) - Южный административный округ</div>`)[0];
+                popup_a3db4d7b2db4687691fe46609bbb8ede.setContent(html_ac4cddafa25d3cd40a829bb47dcc4741);
+            
+        
+
+        marker_a7f35be02af1126de3b50e6262b4ee7f.bindPopup(popup_a3db4d7b2db4687691fe46609bbb8ede)
+        ;
+
+        
+    
+    
+            var marker_61932c7c4e6785081a07033077757547 = L.marker(
+                [55.65412, 37.64738],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b5e3999f90af4327e13929de7e2ec021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_61932c7c4e6785081a07033077757547.setIcon(icon_b5e3999f90af4327e13929de7e2ec021);
+        
+    
+        var popup_061f789f722dc370e2e39ec664196673 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dacb5b9f8d18a3527ecd2d4c9ef7b17f = $(`<div id="html_dacb5b9f8d18a3527ecd2d4c9ef7b17f" style="width: 100.0%; height: 100.0%;">Каширская (55.65412, 37.64738) - Южный административный округ</div>`)[0];
+                popup_061f789f722dc370e2e39ec664196673.setContent(html_dacb5b9f8d18a3527ecd2d4c9ef7b17f);
+            
+        
+
+        marker_61932c7c4e6785081a07033077757547.bindPopup(popup_061f789f722dc370e2e39ec664196673)
+        ;
+
+        
+    
+    
+            var marker_386f1b081db8e94d007a1066576e0379 = L.marker(
+                [55.74388, 37.56673],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a512b20b9670fb14a260df4cfc83bc23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_386f1b081db8e94d007a1066576e0379.setIcon(icon_a512b20b9670fb14a260df4cfc83bc23);
+        
+    
+        var popup_6cf516a6baa04421b4bc83d0e01ffa6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7970463be652b39dfdb0b14c9698b05d = $(`<div id="html_7970463be652b39dfdb0b14c9698b05d" style="width: 100.0%; height: 100.0%;">Киевская (55.74388, 37.56673) - Западный административный округ</div>`)[0];
+                popup_6cf516a6baa04421b4bc83d0e01ffa6a.setContent(html_7970463be652b39dfdb0b14c9698b05d);
+            
+        
+
+        marker_386f1b081db8e94d007a1066576e0379.bindPopup(popup_6cf516a6baa04421b4bc83d0e01ffa6a)
+        ;
+
+        
+    
+    
+            var marker_bf9709f187e42f4baedb4794efe9e05a = L.marker(
+                [55.75634, 37.63002],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_60765a83e5b717b6607ddd0b40cfe21b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_bf9709f187e42f4baedb4794efe9e05a.setIcon(icon_60765a83e5b717b6607ddd0b40cfe21b);
+        
+    
+        var popup_53fa664f0cd2883a27ba102c9c65ca11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a77b767a1a25df94107d2926e80224dc = $(`<div id="html_a77b767a1a25df94107d2926e80224dc" style="width: 100.0%; height: 100.0%;">Китай город (55.75634, 37.63002) - NOT FOUND</div>`)[0];
+                popup_53fa664f0cd2883a27ba102c9c65ca11.setContent(html_a77b767a1a25df94107d2926e80224dc);
+            
+        
+
+        marker_bf9709f187e42f4baedb4794efe9e05a.bindPopup(popup_53fa664f0cd2883a27ba102c9c65ca11)
+        ;
+
+        
+    
+    
+            var marker_28bf0f8b63f93f8b55b275ad1ba68489 = L.marker(
+                [55.753903, 37.635405],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0618295f56bd5f7b89cbb35d7b4bf1f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_28bf0f8b63f93f8b55b275ad1ba68489.setIcon(icon_0618295f56bd5f7b89cbb35d7b4bf1f5);
+        
+    
+        var popup_6b588273631df296db1fe20c7a9804bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60730cdd441ea1604e9d709be982b029 = $(`<div id="html_60730cdd441ea1604e9d709be982b029" style="width: 100.0%; height: 100.0%;">Китай город (55.753903, 37.635405) - NOT FOUND</div>`)[0];
+                popup_6b588273631df296db1fe20c7a9804bc.setContent(html_60730cdd441ea1604e9d709be982b029);
+            
+        
+
+        marker_28bf0f8b63f93f8b55b275ad1ba68489.bindPopup(popup_6b588273631df296db1fe20c7a9804bc)
+        ;
+
+        
+    
+    
+            var marker_4e60c9f55ab3e239fe2f77a84b6075e1 = L.marker(
+                [55.67745, 37.66298],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7e8b1af37f604ea8e31b78ea359f5236 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4e60c9f55ab3e239fe2f77a84b6075e1.setIcon(icon_7e8b1af37f604ea8e31b78ea359f5236);
+        
+    
+        var popup_76c78e5ff1f81f824ca58b6632ff3943 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ff0f49929ad3068b14ee7a75071327 = $(`<div id="html_05ff0f49929ad3068b14ee7a75071327" style="width: 100.0%; height: 100.0%;">Коломенское (55.67745, 37.66298) - NOT FOUND</div>`)[0];
+                popup_76c78e5ff1f81f824ca58b6632ff3943.setContent(html_05ff0f49929ad3068b14ee7a75071327);
+            
+        
+
+        marker_4e60c9f55ab3e239fe2f77a84b6075e1.bindPopup(popup_76c78e5ff1f81f824ca58b6632ff3943)
+        ;
+
+        
+    
+    
+            var marker_31a4b21d988239d1784392ef742117e3 = L.marker(
+                [55.77717, 37.655689],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_490f6c4fe3f3a78241a1d1c42d34179e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31a4b21d988239d1784392ef742117e3.setIcon(icon_490f6c4fe3f3a78241a1d1c42d34179e);
+        
+    
+        var popup_abf9d45c54378a984d8f7ccf99ebd8cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f68d1536f3607bd39d132aa55be31bd = $(`<div id="html_8f68d1536f3607bd39d132aa55be31bd" style="width: 100.0%; height: 100.0%;">Комсомольская (55.77717, 37.655689) - Центральный административный округ</div>`)[0];
+                popup_abf9d45c54378a984d8f7ccf99ebd8cd.setContent(html_8f68d1536f3607bd39d132aa55be31bd);
+            
+        
+
+        marker_31a4b21d988239d1784392ef742117e3.bindPopup(popup_abf9d45c54378a984d8f7ccf99ebd8cd)
+        ;
+
+        
+    
+    
+            var marker_c886c80a8124b40b0417f42b83ef3f19 = L.marker(
+                [55.63253, 37.52005],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ac22bc02dfbeabe2ea4d4c4f066abd35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c886c80a8124b40b0417f42b83ef3f19.setIcon(icon_ac22bc02dfbeabe2ea4d4c4f066abd35);
+        
+    
+        var popup_cc7021839e28a84295eae724cf2c99df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13209acd1d0e964bd6327443ed8509b5 = $(`<div id="html_13209acd1d0e964bd6327443ed8509b5" style="width: 100.0%; height: 100.0%;">Коньково (55.63253, 37.52005) - Юго-Западный административный округ</div>`)[0];
+                popup_cc7021839e28a84295eae724cf2c99df.setContent(html_13209acd1d0e964bd6327443ed8509b5);
+            
+        
+
+        marker_c886c80a8124b40b0417f42b83ef3f19.bindPopup(popup_cc7021839e28a84295eae724cf2c99df)
+        ;
+
+        
+    
+    
+            var marker_a189fc5f526a1b58bd663c907b210c50 = L.marker(
+                [55.70533, 37.68508],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_eebcb3c877085e4e4e58c5dbda1a1591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a189fc5f526a1b58bd663c907b210c50.setIcon(icon_eebcb3c877085e4e4e58c5dbda1a1591);
+        
+    
+        var popup_ce85827da3174fb68fc06047991316a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3019949af4f95370d3626c622fa755d = $(`<div id="html_f3019949af4f95370d3626c622fa755d" style="width: 100.0%; height: 100.0%;">Кожуховская (55.70533, 37.68508) - Юго-Восточный административный округ</div>`)[0];
+                popup_ce85827da3174fb68fc06047991316a6.setContent(html_f3019949af4f95370d3626c622fa755d);
+            
+        
+
+        marker_a189fc5f526a1b58bd663c907b210c50.bindPopup(popup_ce85827da3174fb68fc06047991316a6)
+        ;
+
+        
+    
+    
+            var marker_df8bdf5c0cab0f1f572f7842f735be07 = L.marker(
+                [55.614491, 37.744724],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3e3060a41781a861713316c9b01f357c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df8bdf5c0cab0f1f572f7842f735be07.setIcon(icon_3e3060a41781a861713316c9b01f357c);
+        
+    
+        var popup_9e95a4b59d96809fb3d3a27db7b48f99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8573114ae7bee1c6dd34bbc8dfff0cea = $(`<div id="html_8573114ae7bee1c6dd34bbc8dfff0cea" style="width: 100.0%; height: 100.0%;">Красногвардейская (55.614491, 37.744724) - Южный административный округ</div>`)[0];
+                popup_9e95a4b59d96809fb3d3a27db7b48f99.setContent(html_8573114ae7bee1c6dd34bbc8dfff0cea);
+            
+        
+
+        marker_df8bdf5c0cab0f1f572f7842f735be07.bindPopup(popup_9e95a4b59d96809fb3d3a27db7b48f99)
+        ;
+
+        
+    
+    
+            var marker_0e29717549b4c90e2352f01803727e0b = L.marker(
+                [55.760109, 37.577141],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_dca5c7209db6d8bdfcc1cfd3edd14912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0e29717549b4c90e2352f01803727e0b.setIcon(icon_dca5c7209db6d8bdfcc1cfd3edd14912);
+        
+    
+        var popup_5652411c36a1f539ab4da95d09d090c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e9269d93972244e70f997728a0e54fe = $(`<div id="html_6e9269d93972244e70f997728a0e54fe" style="width: 100.0%; height: 100.0%;">Краснопресненская (55.760109, 37.577141) - NOT FOUND</div>`)[0];
+                popup_5652411c36a1f539ab4da95d09d090c3.setContent(html_6e9269d93972244e70f997728a0e54fe);
+            
+        
+
+        marker_0e29717549b4c90e2352f01803727e0b.bindPopup(popup_5652411c36a1f539ab4da95d09d090c3)
+        ;
+
+        
+    
+    
+            var marker_749c8adea27ef7c9dd0b52b1a01e77ff = L.marker(
+                [55.780763, 37.666264],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3844708e6c29e92f5737046ee76122e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_749c8adea27ef7c9dd0b52b1a01e77ff.setIcon(icon_3844708e6c29e92f5737046ee76122e3);
+        
+    
+        var popup_3b28da0417c437ee82d4fe98afa58e4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfe42f864138c68dd1ccbfdca51c0d79 = $(`<div id="html_bfe42f864138c68dd1ccbfdca51c0d79" style="width: 100.0%; height: 100.0%;">Красносельская (55.780763, 37.666264) - Центральный административный округ</div>`)[0];
+                popup_3b28da0417c437ee82d4fe98afa58e4c.setContent(html_bfe42f864138c68dd1ccbfdca51c0d79);
+            
+        
+
+        marker_749c8adea27ef7c9dd0b52b1a01e77ff.bindPopup(popup_3b28da0417c437ee82d4fe98afa58e4c)
+        ;
+
+        
+    
+    
+            var marker_f90ecee1681c9e3c92a65d2272c51ec5 = L.marker(
+                [55.76958, 37.6499],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0e01eaef277c30b2539f6f82aab23d77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f90ecee1681c9e3c92a65d2272c51ec5.setIcon(icon_0e01eaef277c30b2539f6f82aab23d77);
+        
+    
+        var popup_fd4a53906885a2d14a1f3b5bf9c20d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_619c063fbe4d4d860ba7f620e203aba9 = $(`<div id="html_619c063fbe4d4d860ba7f620e203aba9" style="width: 100.0%; height: 100.0%;">Красные ворота (55.76958, 37.6499) - NOT FOUND</div>`)[0];
+                popup_fd4a53906885a2d14a1f3b5bf9c20d43.setContent(html_619c063fbe4d4d860ba7f620e203aba9);
+            
+        
+
+        marker_f90ecee1681c9e3c92a65d2272c51ec5.bindPopup(popup_fd4a53906885a2d14a1f3b5bf9c20d43)
+        ;
+
+        
+    
+    
+            var marker_a9c775cd69312a1992cf1fdc1597d7a1 = L.marker(
+                [55.732877, 37.668998],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b2c62bc0d4bfac4a89751856b2d68dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a9c775cd69312a1992cf1fdc1597d7a1.setIcon(icon_b2c62bc0d4bfac4a89751856b2d68dba);
+        
+    
+        var popup_c4f745094ecbbb1c29351d15c715dc67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2458748fa0fa230267ce9cec0fa3d69e = $(`<div id="html_2458748fa0fa230267ce9cec0fa3d69e" style="width: 100.0%; height: 100.0%;">Крестьянская застава (55.732877, 37.668998) - NOT FOUND</div>`)[0];
+                popup_c4f745094ecbbb1c29351d15c715dc67.setContent(html_2458748fa0fa230267ce9cec0fa3d69e);
+            
+        
+
+        marker_a9c775cd69312a1992cf1fdc1597d7a1.bindPopup(popup_c4f745094ecbbb1c29351d15c715dc67)
+        ;
+
+        
+    
+    
+            var marker_b96eca9c4796d705d77119539663f7f4 = L.marker(
+                [55.74525, 37.60463],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d7b6b9c49999bdf5a498ae23cad30cae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b96eca9c4796d705d77119539663f7f4.setIcon(icon_d7b6b9c49999bdf5a498ae23cad30cae);
+        
+    
+        var popup_f515b2437da25f70e42eaef17c01c6ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696fb1df21e24458afdce92bb788a42f = $(`<div id="html_696fb1df21e24458afdce92bb788a42f" style="width: 100.0%; height: 100.0%;">Кропоткинская (55.74525, 37.60463) - Центральный административный округ</div>`)[0];
+                popup_f515b2437da25f70e42eaef17c01c6ff.setContent(html_696fb1df21e24458afdce92bb788a42f);
+            
+        
+
+        marker_b96eca9c4796d705d77119539663f7f4.bindPopup(popup_f515b2437da25f70e42eaef17c01c6ff)
+        ;
+
+        
+    
+    
+            var marker_75a11c5de0b8cfbc967a6adfab775ab0 = L.marker(
+                [55.75879, 37.40633],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ed81a1bbf2c9ab78a8d706603ea00fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_75a11c5de0b8cfbc967a6adfab775ab0.setIcon(icon_ed81a1bbf2c9ab78a8d706603ea00fd2);
+        
+    
+        var popup_85ec5ac0acdebf4612b30b607adb880d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37da4d941b497fe2f99ce2faeeb34976 = $(`<div id="html_37da4d941b497fe2f99ce2faeeb34976" style="width: 100.0%; height: 100.0%;">Крылатское (55.75879, 37.40633) - Западный административный округ</div>`)[0];
+                popup_85ec5ac0acdebf4612b30b607adb880d.setContent(html_37da4d941b497fe2f99ce2faeeb34976);
+            
+        
+
+        marker_75a11c5de0b8cfbc967a6adfab775ab0.bindPopup(popup_85ec5ac0acdebf4612b30b607adb880d)
+        ;
+
+        
+    
+    
+            var marker_2076aaeb79d68485384d4f8e67ba66dd = L.marker(
+                [55.73045, 37.44646],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f2755e9260edab8eda22338f8592c3e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_2076aaeb79d68485384d4f8e67ba66dd.setIcon(icon_f2755e9260edab8eda22338f8592c3e5);
+        
+    
+        var popup_86813c31826580d6ee94e5da9e127517 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa626f104d4c47b12b3c5ccb7a1c02d8 = $(`<div id="html_fa626f104d4c47b12b3c5ccb7a1c02d8" style="width: 100.0%; height: 100.0%;">Кунцевская (55.73045, 37.44646) - Западный административный округ</div>`)[0];
+                popup_86813c31826580d6ee94e5da9e127517.setContent(html_fa626f104d4c47b12b3c5ccb7a1c02d8);
+            
+        
+
+        marker_2076aaeb79d68485384d4f8e67ba66dd.bindPopup(popup_86813c31826580d6ee94e5da9e127517)
+        ;
+
+        
+    
+    
+            var marker_573e7f1478d8118bc8c507c7ddc989eb = L.marker(
+                [55.75848, 37.65985],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0c110e144a34708e738edf3493c9a397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_573e7f1478d8118bc8c507c7ddc989eb.setIcon(icon_0c110e144a34708e738edf3493c9a397);
+        
+    
+        var popup_85c035151842a37f9051691aa4263136 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a147e954d955fbfc8008a3f220cadf5 = $(`<div id="html_0a147e954d955fbfc8008a3f220cadf5" style="width: 100.0%; height: 100.0%;">Курская (55.75848, 37.65985) - Центральный административный округ</div>`)[0];
+                popup_85c035151842a37f9051691aa4263136.setContent(html_0a147e954d955fbfc8008a3f220cadf5);
+            
+        
+
+        marker_573e7f1478d8118bc8c507c7ddc989eb.bindPopup(popup_85c035151842a37f9051691aa4263136)
+        ;
+
+        
+    
+    
+            var marker_18a3f31ce547d181db128bca7f5f0b6c = L.marker(
+                [55.73947, 37.53433],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_dd4402cb7f46ec16ffb1a4ce73d6d436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_18a3f31ce547d181db128bca7f5f0b6c.setIcon(icon_dd4402cb7f46ec16ffb1a4ce73d6d436);
+        
+    
+        var popup_65d7568d6f0f668c2eeaa0c061df12d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c951248cdfd6e19d8657469b8a26ba2b = $(`<div id="html_c951248cdfd6e19d8657469b8a26ba2b" style="width: 100.0%; height: 100.0%;">Кутузовская (55.73947, 37.53433) - Западный административный округ</div>`)[0];
+                popup_65d7568d6f0f668c2eeaa0c061df12d0.setContent(html_c951248cdfd6e19d8657469b8a26ba2b);
+            
+        
+
+        marker_18a3f31ce547d181db128bca7f5f0b6c.bindPopup(popup_65d7568d6f0f668c2eeaa0c061df12d0)
+        ;
+
+        
+    
+    
+            var marker_df3e8f6ade4a69eae16184ca793e8c33 = L.marker(
+                [55.70531, 37.76775],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f0121caeb43f64487c9dffa203542695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_df3e8f6ade4a69eae16184ca793e8c33.setIcon(icon_f0121caeb43f64487c9dffa203542695);
+        
+    
+        var popup_3c3c61f1ad4312c5258ac6a46c76c7d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b9912234d4c4918f8a6448fb9dd4d15 = $(`<div id="html_5b9912234d4c4918f8a6448fb9dd4d15" style="width: 100.0%; height: 100.0%;">Кузьминки (55.70531, 37.76775) - Юго-Восточный административный округ</div>`)[0];
+                popup_3c3c61f1ad4312c5258ac6a46c76c7d6.setContent(html_5b9912234d4c4918f8a6448fb9dd4d15);
+            
+        
+
+        marker_df3e8f6ade4a69eae16184ca793e8c33.bindPopup(popup_3c3c61f1ad4312c5258ac6a46c76c7d6)
+        ;
+
+        
+    
+    
+            var marker_c42392c626d58b8213f2b31b05b4a787 = L.marker(
+                [55.76118, 37.62386],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_caac27a54e44163a77c06cf9bc35b0af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c42392c626d58b8213f2b31b05b4a787.setIcon(icon_caac27a54e44163a77c06cf9bc35b0af);
+        
+    
+        var popup_043233994b056f7da58505e2dce4d353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20616f8e6ac72689a54672e6a6f32441 = $(`<div id="html_20616f8e6ac72689a54672e6a6f32441" style="width: 100.0%; height: 100.0%;">Кузнецкий мост (55.76118, 37.62386) - NOT FOUND</div>`)[0];
+                popup_043233994b056f7da58505e2dce4d353.setContent(html_20616f8e6ac72689a54672e6a6f32441);
+            
+        
+
+        marker_c42392c626d58b8213f2b31b05b4a787.bindPopup(popup_043233994b056f7da58505e2dce4d353)
+        ;
+
+        
+    
+    
+            var marker_6dae799d9e807eab8c1b437f384bdac1 = L.marker(
+                [55.70818, 37.58742],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_042a1ae4a6118cedcb189f60fa86c3a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6dae799d9e807eab8c1b437f384bdac1.setIcon(icon_042a1ae4a6118cedcb189f60fa86c3a4);
+        
+    
+        var popup_d1a72dbbb7d5bbf8e72c752644ece775 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bd802e31bd8532156af7f3121d07812 = $(`<div id="html_4bd802e31bd8532156af7f3121d07812" style="width: 100.0%; height: 100.0%;">Ленинский проспект (55.70818, 37.58742) - NOT FOUND</div>`)[0];
+                popup_d1a72dbbb7d5bbf8e72c752644ece775.setContent(html_4bd802e31bd8532156af7f3121d07812);
+            
+        
+
+        marker_6dae799d9e807eab8c1b437f384bdac1.bindPopup(popup_d1a72dbbb7d5bbf8e72c752644ece775)
+        ;
+
+        
+    
+    
+            var marker_009ebf85120f176d1c9446f6244f934f = L.marker(
+                [55.75876, 37.62573],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b8b501d587a71f4cb0417687eac8f8bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_009ebf85120f176d1c9446f6244f934f.setIcon(icon_b8b501d587a71f4cb0417687eac8f8bd);
+        
+    
+        var popup_b04b292369ff744e792f884292628c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70ad4d931577cb7bf9b9876e88fd7710 = $(`<div id="html_70ad4d931577cb7bf9b9876e88fd7710" style="width: 100.0%; height: 100.0%;">Лубянка (55.75876, 37.62573) - Центральный административный округ</div>`)[0];
+                popup_b04b292369ff744e792f884292628c2c.setContent(html_70ad4d931577cb7bf9b9876e88fd7710);
+            
+        
+
+        marker_009ebf85120f176d1c9446f6244f934f.bindPopup(popup_b04b292369ff744e792f884292628c2c)
+        ;
+
+        
+    
+    
+            var marker_e7e0734aaad0c7915e40e41ce68d5e35 = L.marker(
+                [55.67694, 37.76316],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_5e8d04ada237f63b2c916f03ab5f0529 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e7e0734aaad0c7915e40e41ce68d5e35.setIcon(icon_5e8d04ada237f63b2c916f03ab5f0529);
+        
+    
+        var popup_189b58e2ea86c73141e88275b6724d62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a1e47724b03197115d57ba33c048ff3 = $(`<div id="html_5a1e47724b03197115d57ba33c048ff3" style="width: 100.0%; height: 100.0%;">Люблино (55.67694, 37.76316) - Юго-Восточный административный округ</div>`)[0];
+                popup_189b58e2ea86c73141e88275b6724d62.setContent(html_5a1e47724b03197115d57ba33c048ff3);
+            
+        
+
+        marker_e7e0734aaad0c7915e40e41ce68d5e35.bindPopup(popup_189b58e2ea86c73141e88275b6724d62)
+        ;
+
+        
+    
+    
+            var marker_e609ed75d675c7e0d260b46100b9d19f = L.marker(
+                [55.793602, 37.615762],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_4457e907c636f9e022f144fe9286bddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e609ed75d675c7e0d260b46100b9d19f.setIcon(icon_4457e907c636f9e022f144fe9286bddb);
+        
+    
+        var popup_204aaec15a0655e2c6971096f37d5a81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86857e42b365afa04f34997694bee528 = $(`<div id="html_86857e42b365afa04f34997694bee528" style="width: 100.0%; height: 100.0%;">Марьина роща (стр.) (55.793602, 37.615762) - NOT FOUND</div>`)[0];
+                popup_204aaec15a0655e2c6971096f37d5a81.setContent(html_86857e42b365afa04f34997694bee528);
+            
+        
+
+        marker_e609ed75d675c7e0d260b46100b9d19f.bindPopup(popup_204aaec15a0655e2c6971096f37d5a81)
+        ;
+
+        
+    
+    
+            var marker_17904f3512fd2adb6b065dc75bd48292 = L.marker(
+                [55.65193, 37.74771],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_1a23c64fbad2e7c6b688807f90a72b60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_17904f3512fd2adb6b065dc75bd48292.setIcon(icon_1a23c64fbad2e7c6b688807f90a72b60);
+        
+    
+        var popup_f888328b3b66ef2ed12ffd5b4e506ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80acd07ff5204e59481119566d72860 = $(`<div id="html_e80acd07ff5204e59481119566d72860" style="width: 100.0%; height: 100.0%;">Марьино (55.65193, 37.74771) - Юго-Восточный административный округ</div>`)[0];
+                popup_f888328b3b66ef2ed12ffd5b4e506ee9.setContent(html_e80acd07ff5204e59481119566d72860);
+            
+        
+
+        marker_17904f3512fd2adb6b065dc75bd48292.bindPopup(popup_f888328b3b66ef2ed12ffd5b4e506ee9)
+        ;
+
+        
+    
+    
+            var marker_06f4f3dc7af801ec0fa3ebfcce9e76c1 = L.marker(
+                [55.7407, 37.65773],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_80e15615c32cd7da474eebe2877990ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06f4f3dc7af801ec0fa3ebfcce9e76c1.setIcon(icon_80e15615c32cd7da474eebe2877990ad);
+        
+    
+        var popup_1741bf6769748c735bd13f7745b92433 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854f49558255126009823c5f55ea7a75 = $(`<div id="html_854f49558255126009823c5f55ea7a75" style="width: 100.0%; height: 100.0%;">Марксистская (55.7407, 37.65773) - Центральный административный округ</div>`)[0];
+                popup_1741bf6769748c735bd13f7745b92433.setContent(html_854f49558255126009823c5f55ea7a75);
+            
+        
+
+        marker_06f4f3dc7af801ec0fa3ebfcce9e76c1.bindPopup(popup_1741bf6769748c735bd13f7745b92433)
+        ;
+
+        
+    
+    
+            var marker_07252580658018b7dcd3e8a127d00739 = L.marker(
+                [55.76909, 37.59635],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_60b83155fbbd5e0d15b6da2f86db47d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07252580658018b7dcd3e8a127d00739.setIcon(icon_60b83155fbbd5e0d15b6da2f86db47d3);
+        
+    
+        var popup_9c1b6b70773bdbae01c52848d96e7bc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbe9b8a3e3a762cd7cff7ae21b3c7521 = $(`<div id="html_fbe9b8a3e3a762cd7cff7ae21b3c7521" style="width: 100.0%; height: 100.0%;">Маяковская (55.76909, 37.59635) - Центральный административный округ</div>`)[0];
+                popup_9c1b6b70773bdbae01c52848d96e7bc7.setContent(html_fbe9b8a3e3a762cd7cff7ae21b3c7521);
+            
+        
+
+        marker_07252580658018b7dcd3e8a127d00739.bindPopup(popup_9c1b6b70773bdbae01c52848d96e7bc7)
+        ;
+
+        
+    
+    
+            var marker_6d2420cd158e6740f4e604eb878d0e0c = L.marker(
+                [55.88594, 37.6612],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_492c49a37faa556a7f8022b7dd02aa46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6d2420cd158e6740f4e604eb878d0e0c.setIcon(icon_492c49a37faa556a7f8022b7dd02aa46);
+        
+    
+        var popup_7a80f57426825f298c344ad95c512c7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada020035a80f77f3edffbb6756ecd07 = $(`<div id="html_ada020035a80f77f3edffbb6756ecd07" style="width: 100.0%; height: 100.0%;">Медведково (55.88594, 37.6612) - Северо-Восточный административный округ</div>`)[0];
+                popup_7a80f57426825f298c344ad95c512c7a.setContent(html_ada020035a80f77f3edffbb6756ecd07);
+            
+        
+
+        marker_6d2420cd158e6740f4e604eb878d0e0c.bindPopup(popup_7a80f57426825f298c344ad95c512c7a)
+        ;
+
+        
+    
+    
+            var marker_4b37749cfa950ae9686f6ec52df8c2a1 = L.marker(
+                [55.78251, 37.59792],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a78fd2c81c65d9c464182be74a2a52a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b37749cfa950ae9686f6ec52df8c2a1.setIcon(icon_a78fd2c81c65d9c464182be74a2a52a3);
+        
+    
+        var popup_a636bb51459d98fb5310fe09f42b69d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dad53e25298014316b00cc621ad8cca = $(`<div id="html_6dad53e25298014316b00cc621ad8cca" style="width: 100.0%; height: 100.0%;">Менделеевская (55.78251, 37.59792) - Центральный административный округ</div>`)[0];
+                popup_a636bb51459d98fb5310fe09f42b69d1.setContent(html_6dad53e25298014316b00cc621ad8cca);
+            
+        
+
+        marker_4b37749cfa950ae9686f6ec52df8c2a1.bindPopup(popup_a636bb51459d98fb5310fe09f42b69d1)
+        ;
+
+        
+    
+    
+            var marker_a2db5a002b1399cfdc15e7563e3bc7b5 = L.marker(
+                [55.731548, 37.491016],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_813ebafc21b2433023347de451f0b35f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a2db5a002b1399cfdc15e7563e3bc7b5.setIcon(icon_813ebafc21b2433023347de451f0b35f);
+        
+    
+        var popup_12ddf0ab86f32cf54b42b51cf46a8af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d29d1daa1f9d88d26805edd2c0f747 = $(`<div id="html_c1d29d1daa1f9d88d26805edd2c0f747" style="width: 100.0%; height: 100.0%;">Минская (стр.) (55.731548, 37.491016) - NOT FOUND</div>`)[0];
+                popup_12ddf0ab86f32cf54b42b51cf46a8af0.setContent(html_c1d29d1daa1f9d88d26805edd2c0f747);
+            
+        
+
+        marker_a2db5a002b1399cfdc15e7563e3bc7b5.bindPopup(popup_12ddf0ab86f32cf54b42b51cf46a8af0)
+        ;
+
+        
+    
+    
+            var marker_a53b6714e63698ee12179e1546d307a9 = L.marker(
+                [55.781196, 37.633529],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_bb9616261e93a77dcc8906c0107cdb50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a53b6714e63698ee12179e1546d307a9.setIcon(icon_bb9616261e93a77dcc8906c0107cdb50);
+        
+    
+        var popup_e073994ffc960dac8a06c47f7cb209bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fe358b54f19dca453f2f1fbcc8cd7b0 = $(`<div id="html_8fe358b54f19dca453f2f1fbcc8cd7b0" style="width: 100.0%; height: 100.0%;">Проспект мира (55.781196, 37.633529) - NOT FOUND</div>`)[0];
+                popup_e073994ffc960dac8a06c47f7cb209bd.setContent(html_8fe358b54f19dca453f2f1fbcc8cd7b0);
+            
+        
+
+        marker_a53b6714e63698ee12179e1546d307a9.bindPopup(popup_e073994ffc960dac8a06c47f7cb209bd)
+        ;
+
+        
+    
+    
+            var marker_c8f896ed7b851b0e04f7cbcef8e3ba6f = L.marker(
+                [55.84589, 37.35909],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_2b29c3556b56bfd07a2b9a18a6df073e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c8f896ed7b851b0e04f7cbcef8e3ba6f.setIcon(icon_2b29c3556b56bfd07a2b9a18a6df073e);
+        
+    
+        var popup_0c182ef2c3e2f0eaec58e8f63c461164 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8dbec663ccc288fbca725f76ac92dd5 = $(`<div id="html_a8dbec663ccc288fbca725f76ac92dd5" style="width: 100.0%; height: 100.0%;">Митино (стр.) (55.84589, 37.35909) - NOT FOUND</div>`)[0];
+                popup_0c182ef2c3e2f0eaec58e8f63c461164.setContent(html_a8dbec663ccc288fbca725f76ac92dd5);
+            
+        
+
+        marker_c8f896ed7b851b0e04f7cbcef8e3ba6f.bindPopup(popup_0c182ef2c3e2f0eaec58e8f63c461164)
+        ;
+
+        
+    
+    
+            var marker_c1b3225ffab6c4b24fef8b2848b4368d = L.marker(
+                [55.74001, 37.41724],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_04ee69eb08be865629b317a21224f5bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_c1b3225ffab6c4b24fef8b2848b4368d.setIcon(icon_04ee69eb08be865629b317a21224f5bb);
+        
+    
+        var popup_f841dec427cb85c6747c54227a228d3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16746c690eadfdc809e85602081dd0c = $(`<div id="html_b16746c690eadfdc809e85602081dd0c" style="width: 100.0%; height: 100.0%;">Молодежная (55.74001, 37.41724) - Западный административный округ</div>`)[0];
+                popup_f841dec427cb85c6747c54227a228d3c.setContent(html_b16746c690eadfdc809e85602081dd0c);
+            
+        
+
+        marker_c1b3225ffab6c4b24fef8b2848b4368d.bindPopup(popup_f841dec427cb85c6747c54227a228d3c)
+        ;
+
+        
+    
+    
+            var marker_a1e3f59b8dbe9f10a3b5a45894ddf1bf = L.marker(
+                [55.68386, 37.62285],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_54091b821bcb32ef31ba774ecc47e70f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1e3f59b8dbe9f10a3b5a45894ddf1bf.setIcon(icon_54091b821bcb32ef31ba774ecc47e70f);
+        
+    
+        var popup_551d41228c61739db5465f92504bbe1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad2ef9fc030ef4ace35c6248f42def96 = $(`<div id="html_ad2ef9fc030ef4ace35c6248f42def96" style="width: 100.0%; height: 100.0%;">Нагатинская (55.68386, 37.62285) - Южный административный округ</div>`)[0];
+                popup_551d41228c61739db5465f92504bbe1d.setContent(html_ad2ef9fc030ef4ace35c6248f42def96);
+            
+        
+
+        marker_a1e3f59b8dbe9f10a3b5a45894ddf1bf.bindPopup(popup_551d41228c61739db5465f92504bbe1d)
+        ;
+
+        
+    
+    
+            var marker_7bbc4907e286a8cbf296ef0b5398e257 = L.marker(
+                [55.67283, 37.61019],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_9da8fa911d4358fba830de3e4a1d39f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bbc4907e286a8cbf296ef0b5398e257.setIcon(icon_9da8fa911d4358fba830de3e4a1d39f5);
+        
+    
+        var popup_dea69eadc72a7e529fecb171d5ef01dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71a8f893a849f995141125bb20fe15a6 = $(`<div id="html_71a8f893a849f995141125bb20fe15a6" style="width: 100.0%; height: 100.0%;">Нагорная (55.67283, 37.61019) - Южный административный округ</div>`)[0];
+                popup_dea69eadc72a7e529fecb171d5ef01dc.setContent(html_71a8f893a849f995141125bb20fe15a6);
+            
+        
+
+        marker_7bbc4907e286a8cbf296ef0b5398e257.bindPopup(popup_dea69eadc72a7e529fecb171d5ef01dc)
+        ;
+
+        
+    
+    
+            var marker_c141766f3006c7778c0beccd1c1aabb6 = L.marker(
+                [55.66376, 37.60767],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7e42c194c17e4919a725ace8c2a05901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c141766f3006c7778c0beccd1c1aabb6.setIcon(icon_7e42c194c17e4919a725ace8c2a05901);
+        
+    
+        var popup_81f71818913faba86c7696f4288321c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8956b8e4e758a8afdb99e5c5261788b4 = $(`<div id="html_8956b8e4e758a8afdb99e5c5261788b4" style="width: 100.0%; height: 100.0%;">Нахимовский проспект (55.66376, 37.60767) - Юго-Западный административный округ</div>`)[0];
+                popup_81f71818913faba86c7696f4288321c9.setContent(html_8956b8e4e758a8afdb99e5c5261788b4);
+            
+        
+
+        marker_c141766f3006c7778c0beccd1c1aabb6.bindPopup(popup_81f71818913faba86c7696f4288321c9)
+        ;
+
+        
+    
+    
+            var marker_a5ec15c04bccf9d64edfc61e08e387bd = L.marker(
+                [55.66892, 37.55417],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_05d33067ce90435af856f36f2ae4304e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a5ec15c04bccf9d64edfc61e08e387bd.setIcon(icon_05d33067ce90435af856f36f2ae4304e);
+        
+    
+        var popup_1486d460fc6de4f0a5d72c9a872508a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f59715145eb31fe45cb2f60b86718672 = $(`<div id="html_f59715145eb31fe45cb2f60b86718672" style="width: 100.0%; height: 100.0%;">Новые черемушки (55.66892, 37.55417) - NOT FOUND</div>`)[0];
+                popup_1486d460fc6de4f0a5d72c9a872508a6.setContent(html_f59715145eb31fe45cb2f60b86718672);
+            
+        
+
+        marker_a5ec15c04bccf9d64edfc61e08e387bd.bindPopup(popup_1486d460fc6de4f0a5d72c9a872508a6)
+        ;
+
+        
+    
+    
+            var marker_79cfd8bca523df57ae779561295cc3bd = L.marker(
+                [55.75111, 37.81564],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7abcbf508519454cbd12e67a84c77044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_79cfd8bca523df57ae779561295cc3bd.setIcon(icon_7abcbf508519454cbd12e67a84c77044);
+        
+    
+        var popup_5eac01bccdcd65d66384a5dda2cc164e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ca2141a4e9c7f9aff6f3cfc54d2e69d = $(`<div id="html_4ca2141a4e9c7f9aff6f3cfc54d2e69d" style="width: 100.0%; height: 100.0%;">Новогиреево (55.75111, 37.81564) - Восточный административный округ</div>`)[0];
+                popup_5eac01bccdcd65d66384a5dda2cc164e.setContent(html_4ca2141a4e9c7f9aff6f3cfc54d2e69d);
+            
+        
+
+        marker_79cfd8bca523df57ae779561295cc3bd.bindPopup(popup_5eac01bccdcd65d66384a5dda2cc164e)
+        ;
+
+        
+    
+    
+            var marker_27c047bde9992e5e7f5fc49f07260dbe = L.marker(
+                [55.740539, 37.856347],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_313d9c1033da9415361800433b96af11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_27c047bde9992e5e7f5fc49f07260dbe.setIcon(icon_313d9c1033da9415361800433b96af11);
+        
+    
+        var popup_a3fd758f695dc68e26da15bc95490e09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa4029a96668d27ca1d1f4a70d93a9c3 = $(`<div id="html_aa4029a96668d27ca1d1f4a70d93a9c3" style="width: 100.0%; height: 100.0%;">Новокосино (стр.) (55.740539, 37.856347) - NOT FOUND</div>`)[0];
+                popup_a3fd758f695dc68e26da15bc95490e09.setContent(html_aa4029a96668d27ca1d1f4a70d93a9c3);
+            
+        
+
+        marker_27c047bde9992e5e7f5fc49f07260dbe.bindPopup(popup_a3fd758f695dc68e26da15bc95490e09)
+        ;
+
+        
+    
+    
+            var marker_c23b49e26e597f79c72eba8933fff0b3 = L.marker(
+                [55.74212, 37.62901],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_030e3d18291b4e15ac4c636704027128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c23b49e26e597f79c72eba8933fff0b3.setIcon(icon_030e3d18291b4e15ac4c636704027128);
+        
+    
+        var popup_6e91ba3e8d943480cf63b28c024e81ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93620aa50cfe8b4bba3a69b329ddfa30 = $(`<div id="html_93620aa50cfe8b4bba3a69b329ddfa30" style="width: 100.0%; height: 100.0%;">Новокузнецкая (55.74212, 37.62901) - Центральный административный округ</div>`)[0];
+                popup_6e91ba3e8d943480cf63b28c024e81ea.setContent(html_93620aa50cfe8b4bba3a69b329ddfa30);
+            
+        
+
+        marker_c23b49e26e597f79c72eba8933fff0b3.bindPopup(popup_6e91ba3e8d943480cf63b28c024e81ea)
+        ;
+
+        
+    
+    
+            var marker_08c8ceb69499a442f332c380dad33b79 = L.marker(
+                [55.77921, 37.6009],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d49e296a8f07993aed48c64cbcb5a822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08c8ceb69499a442f332c380dad33b79.setIcon(icon_d49e296a8f07993aed48c64cbcb5a822);
+        
+    
+        var popup_3516edddf393033928e5fa95007c52df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fc91a720fc34c1cdf53e68339a97161 = $(`<div id="html_6fc91a720fc34c1cdf53e68339a97161" style="width: 100.0%; height: 100.0%;">Новослободская (55.77921, 37.6009) - Центральный административный округ</div>`)[0];
+                popup_3516edddf393033928e5fa95007c52df.setContent(html_6fc91a720fc34c1cdf53e68339a97161);
+            
+        
+
+        marker_08c8ceb69499a442f332c380dad33b79.bindPopup(popup_3516edddf393033928e5fa95007c52df)
+        ;
+
+        
+    
+    
+            var marker_64d2329d9e87172fdaf2a58cc2045772 = L.marker(
+                [55.75703, 37.61614],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_73a6bbf2fe0d1e5dd10fb98951888e61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_64d2329d9e87172fdaf2a58cc2045772.setIcon(icon_73a6bbf2fe0d1e5dd10fb98951888e61);
+        
+    
+        var popup_1f45f6a6afab860b85f456400e760d95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2bb450da907597c0468dc2e60deceba = $(`<div id="html_e2bb450da907597c0468dc2e60deceba" style="width: 100.0%; height: 100.0%;">Охотный ряд (55.75703, 37.61614) - NOT FOUND</div>`)[0];
+                popup_1f45f6a6afab860b85f456400e760d95.setContent(html_e2bb450da907597c0468dc2e60deceba);
+            
+        
+
+        marker_64d2329d9e87172fdaf2a58cc2045772.bindPopup(popup_1f45f6a6afab860b85f456400e760d95)
+        ;
+
+        
+    
+    
+            var marker_a09692923165d6a48880e72bea9c646d = L.marker(
+                [55.793615, 37.493496],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f152e4f2a90edd84bd9c58e646642e70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a09692923165d6a48880e72bea9c646d.setIcon(icon_f152e4f2a90edd84bd9c58e646642e70);
+        
+    
+        var popup_61b9e5fb2b94c481b1ce03387e22e56b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6964a36967091eb7c2d1b51f061d683f = $(`<div id="html_6964a36967091eb7c2d1b51f061d683f" style="width: 100.0%; height: 100.0%;">Октябрьское поле (55.793615, 37.493496) - NOT FOUND</div>`)[0];
+                popup_61b9e5fb2b94c481b1ce03387e22e56b.setContent(html_6964a36967091eb7c2d1b51f061d683f);
+            
+        
+
+        marker_a09692923165d6a48880e72bea9c646d.bindPopup(popup_61b9e5fb2b94c481b1ce03387e22e56b)
+        ;
+
+        
+    
+    
+            var marker_72c13c3a3082d5680aa85153c2c2fb39 = L.marker(
+                [55.729, 37.61139],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_fb17c6158fb10f9ac2035a195c9ffcdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72c13c3a3082d5680aa85153c2c2fb39.setIcon(icon_fb17c6158fb10f9ac2035a195c9ffcdd);
+        
+    
+        var popup_6c619175674e049ea14ecdf4a2a8dd8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ebe36e77e2470a852fad8c91b277859 = $(`<div id="html_4ebe36e77e2470a852fad8c91b277859" style="width: 100.0%; height: 100.0%;">Октябрьская (55.729, 37.61139) - Центральный административный округ</div>`)[0];
+                popup_6c619175674e049ea14ecdf4a2a8dd8e.setContent(html_4ebe36e77e2470a852fad8c91b277859);
+            
+        
+
+        marker_72c13c3a3082d5680aa85153c2c2fb39.bindPopup(popup_6c619175674e049ea14ecdf4a2a8dd8e)
+        ;
+
+        
+    
+    
+            var marker_e54683abb346bdc38f0f43d74fdf50fc = L.marker(
+                [55.61214, 37.69584],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_56237ad99eebcd2737c3e6a072d45702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e54683abb346bdc38f0f43d74fdf50fc.setIcon(icon_56237ad99eebcd2737c3e6a072d45702);
+        
+    
+        var popup_5a6137b5bfd3035408c57f1425d5060c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3ab310e7f83cfb9cc1d180426951272 = $(`<div id="html_f3ab310e7f83cfb9cc1d180426951272" style="width: 100.0%; height: 100.0%;">Орехово (55.61214, 37.69584) - Южный административный округ</div>`)[0];
+                popup_5a6137b5bfd3035408c57f1425d5060c.setContent(html_f3ab310e7f83cfb9cc1d180426951272);
+            
+        
+
+        marker_e54683abb346bdc38f0f43d74fdf50fc.bindPopup(popup_5a6137b5bfd3035408c57f1425d5060c)
+        ;
+
+        
+    
+    
+            var marker_912a84e4b608021c74a9951610665b5b = L.marker(
+                [55.86417, 37.60488],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_6ee0bca0016560e732becf7a7eac03e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_912a84e4b608021c74a9951610665b5b.setIcon(icon_6ee0bca0016560e732becf7a7eac03e1);
+        
+    
+        var popup_7d164f24775e92d87db36a0a5f6c1e55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3f41042db621b2038857789b64a854a = $(`<div id="html_d3f41042db621b2038857789b64a854a" style="width: 100.0%; height: 100.0%;">Отрадное (55.86417, 37.60488) - Северо-Восточный административный округ</div>`)[0];
+                popup_7d164f24775e92d87db36a0a5f6c1e55.setContent(html_d3f41042db621b2038857789b64a854a);
+            
+        
+
+        marker_912a84e4b608021c74a9951610665b5b.bindPopup(popup_7d164f24775e92d87db36a0a5f6c1e55)
+        ;
+
+        
+    
+    
+            var marker_d5c34a6c72a5e6877cc508529d9abdc0 = L.marker(
+                [55.73512, 37.59328],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_c1793413454bbe806826594ccbf14f47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d5c34a6c72a5e6877cc508529d9abdc0.setIcon(icon_c1793413454bbe806826594ccbf14f47);
+        
+    
+        var popup_83f8ab6d59a2bc2e28aa7f3c027e1b25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aac7a97b2168333333d653fe981ca5af = $(`<div id="html_aac7a97b2168333333d653fe981ca5af" style="width: 100.0%; height: 100.0%;">Парк культуры (55.73512, 37.59328) - NOT FOUND</div>`)[0];
+                popup_83f8ab6d59a2bc2e28aa7f3c027e1b25.setContent(html_aac7a97b2168333333d653fe981ca5af);
+            
+        
+
+        marker_d5c34a6c72a5e6877cc508529d9abdc0.bindPopup(popup_83f8ab6d59a2bc2e28aa7f3c027e1b25)
+        ;
+
+        
+    
+    
+            var marker_60f32c7735ce5295a96cae6c0fb56cc6 = L.marker(
+                [55.736559, 37.512591],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f6a2627c0b67c8b70fb021a0150a3c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_60f32c7735ce5295a96cae6c0fb56cc6.setIcon(icon_f6a2627c0b67c8b70fb021a0150a3c56);
+        
+    
+        var popup_7afd393328ea57920a605c63d5ea5997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c411b0b66899dd43734b657a2e0acdaa = $(`<div id="html_c411b0b66899dd43734b657a2e0acdaa" style="width: 100.0%; height: 100.0%;">Парк Победы (стр.) (55.736559, 37.512591) - NOT FOUND</div>`)[0];
+                popup_7afd393328ea57920a605c63d5ea5997.setContent(html_c411b0b66899dd43734b657a2e0acdaa);
+            
+        
+
+        marker_60f32c7735ce5295a96cae6c0fb56cc6.bindPopup(popup_7afd393328ea57920a605c63d5ea5997)
+        ;
+
+        
+    
+    
+            var marker_1ce0a5220fa83a38a4d62beb38b1e534 = L.marker(
+                [55.78962, 37.7479],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_fd6fe0d925dfd7841e72d728ccb0caf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_1ce0a5220fa83a38a4d62beb38b1e534.setIcon(icon_fd6fe0d925dfd7841e72d728ccb0caf7);
+        
+    
+        var popup_b72e9d53a57e57a709eb2ef916bf0f8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9579bca8c298fbe1be450f56d1beffe = $(`<div id="html_d9579bca8c298fbe1be450f56d1beffe" style="width: 100.0%; height: 100.0%;">Партизанская (55.78962, 37.7479) - Восточный административный округ</div>`)[0];
+                popup_b72e9d53a57e57a709eb2ef916bf0f8f.setContent(html_d9579bca8c298fbe1be450f56d1beffe);
+            
+        
+
+        marker_1ce0a5220fa83a38a4d62beb38b1e534.bindPopup(popup_b72e9d53a57e57a709eb2ef916bf0f8f)
+        ;
+
+        
+    
+    
+            var marker_03db457b7ebd28a1dde4dec14d2cd7e3 = L.marker(
+                [55.7313, 37.63612],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_37a0d6ca5f389a5cbd2956e1e0c156ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_03db457b7ebd28a1dde4dec14d2cd7e3.setIcon(icon_37a0d6ca5f389a5cbd2956e1e0c156ae);
+        
+    
+        var popup_1af248465a8aad6b7038caf7a292c015 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b794cc88d31390298d1a0e5f896fe7f7 = $(`<div id="html_b794cc88d31390298d1a0e5f896fe7f7" style="width: 100.0%; height: 100.0%;">Павелецкая (55.7313, 37.63612) - NOT FOUND</div>`)[0];
+                popup_1af248465a8aad6b7038caf7a292c015.setContent(html_b794cc88d31390298d1a0e5f896fe7f7);
+            
+        
+
+        marker_03db457b7ebd28a1dde4dec14d2cd7e3.bindPopup(popup_1af248465a8aad6b7038caf7a292c015)
+        ;
+
+        
+    
+    
+            var marker_86209e8cbefb465cd75be58daa2805c0 = L.marker(
+                [55.69252, 37.7295],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3ccc700f163a27a408644d601bb616ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_86209e8cbefb465cd75be58daa2805c0.setIcon(icon_3ccc700f163a27a408644d601bb616ee);
+        
+    
+        var popup_37c96c80f3f200a957f14c8dc240f991 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e6a40ed049fd310b5a1fc3390053156 = $(`<div id="html_8e6a40ed049fd310b5a1fc3390053156" style="width: 100.0%; height: 100.0%;">Печатники (55.69252, 37.7295) - Юго-Восточный административный округ</div>`)[0];
+                popup_37c96c80f3f200a957f14c8dc240f991.setContent(html_8e6a40ed049fd310b5a1fc3390053156);
+            
+        
+
+        marker_86209e8cbefb465cd75be58daa2805c0.bindPopup(popup_37c96c80f3f200a957f14c8dc240f991)
+        ;
+
+        
+    
+    
+            var marker_659f8ac250cc6df54e7f261a964dd6c7 = L.marker(
+                [55.75109, 37.78854],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_2984b53e8ff22a0cdf425920fb8fb3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_659f8ac250cc6df54e7f261a964dd6c7.setIcon(icon_2984b53e8ff22a0cdf425920fb8fb3b0);
+        
+    
+        var popup_c1658125c35734be28834b8da41cb44a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e5809bcdec16858e848630b57151c58 = $(`<div id="html_1e5809bcdec16858e848630b57151c58" style="width: 100.0%; height: 100.0%;">Перово (55.75109, 37.78854) - Восточный административный округ</div>`)[0];
+                popup_c1658125c35734be28834b8da41cb44a.setContent(html_1e5809bcdec16858e848630b57151c58);
+            
+        
+
+        marker_659f8ac250cc6df54e7f261a964dd6c7.bindPopup(popup_c1658125c35734be28834b8da41cb44a)
+        ;
+
+        
+    
+    
+            var marker_b14100b4c81520ef510a62926991f088 = L.marker(
+                [55.79342, 37.79979],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d7183c0e03877bd17f1b6f6dd93e8b68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b14100b4c81520ef510a62926991f088.setIcon(icon_d7183c0e03877bd17f1b6f6dd93e8b68);
+        
+    
+        var popup_d0ed8a9988e8a5037dc7bec94d328c50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfba0577c43563f77c2eb87f4cb5f76d = $(`<div id="html_dfba0577c43563f77c2eb87f4cb5f76d" style="width: 100.0%; height: 100.0%;">Первомайская (55.79342, 37.79979) - Восточный административный округ</div>`)[0];
+                popup_d0ed8a9988e8a5037dc7bec94d328c50.setContent(html_dfba0577c43563f77c2eb87f4cb5f76d);
+            
+        
+
+        marker_b14100b4c81520ef510a62926991f088.bindPopup(popup_d0ed8a9988e8a5037dc7bec94d328c50)
+        ;
+
+        
+    
+    
+            var marker_04c28e469d0c0c69a8576a88f76beb7a = L.marker(
+                [55.83712, 37.57349],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d70c6495f70da18e05a7275bbf4ded13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_04c28e469d0c0c69a8576a88f76beb7a.setIcon(icon_d70c6495f70da18e05a7275bbf4ded13);
+        
+    
+        var popup_5da98d2a166a444ef451fddc0066b5fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23770477334467e15c8f03013868e494 = $(`<div id="html_23770477334467e15c8f03013868e494" style="width: 100.0%; height: 100.0%;">Петровско-Разумовская (55.83712, 37.57349) - Северо-Восточный административный округ</div>`)[0];
+                popup_5da98d2a166a444ef451fddc0066b5fd.setContent(html_23770477334467e15c8f03013868e494);
+            
+        
+
+        marker_04c28e469d0c0c69a8576a88f76beb7a.bindPopup(popup_5da98d2a166a444ef451fddc0066b5fd)
+        ;
+
+        
+    
+    
+            var marker_a47871a288ccd09fd44868dd71667392 = L.marker(
+                [55.73583, 37.46731],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_16e8155b3022123afa2e2c5d9da01137 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_a47871a288ccd09fd44868dd71667392.setIcon(icon_16e8155b3022123afa2e2c5d9da01137);
+        
+    
+        var popup_bc5925f652db7ef52564170006db288b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_704e0d88c3a501b430d18466f727bb5e = $(`<div id="html_704e0d88c3a501b430d18466f727bb5e" style="width: 100.0%; height: 100.0%;">Пионерская (55.73583, 37.46731) - Западный административный округ</div>`)[0];
+                popup_bc5925f652db7ef52564170006db288b.setContent(html_704e0d88c3a501b430d18466f727bb5e);
+            
+        
+
+        marker_a47871a288ccd09fd44868dd71667392.bindPopup(popup_bc5925f652db7ef52564170006db288b)
+        ;
+
+        
+    
+    
+            var marker_356323c27a8065c3abc74613f8d26e16 = L.marker(
+                [55.85931, 37.43687],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_62e9d92db4ec7bce6550dc6d0af5ffd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_356323c27a8065c3abc74613f8d26e16.setIcon(icon_62e9d92db4ec7bce6550dc6d0af5ffd6);
+        
+    
+        var popup_00725e6886ec90f9c08f54f33e077d6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c85e4f72356dc1af291a56dc2f504f40 = $(`<div id="html_c85e4f72356dc1af291a56dc2f504f40" style="width: 100.0%; height: 100.0%;">Планерная (55.85931, 37.43687) - Северо-Западный административный округ</div>`)[0];
+                popup_00725e6886ec90f9c08f54f33e077d6e.setContent(html_c85e4f72356dc1af291a56dc2f504f40);
+            
+        
+
+        marker_356323c27a8065c3abc74613f8d26e16.bindPopup(popup_00725e6886ec90f9c08f54f33e077d6e)
+        ;
+
+        
+    
+    
+            var marker_75171fa87596c1f639aab27716fa9c79 = L.marker(
+                [55.745663, 37.681123],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e0958f17b30780bb1df7fcf25a4762c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75171fa87596c1f639aab27716fa9c79.setIcon(icon_e0958f17b30780bb1df7fcf25a4762c3);
+        
+    
+        var popup_c528b9a909738bd1bc953c00440012e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b9971f2f09dfa393058489b7dff00ff = $(`<div id="html_6b9971f2f09dfa393058489b7dff00ff" style="width: 100.0%; height: 100.0%;">Площадь Ильича (55.745663, 37.681123) - Центральный административный округ</div>`)[0];
+                popup_c528b9a909738bd1bc953c00440012e3.setContent(html_6b9971f2f09dfa393058489b7dff00ff);
+            
+        
+
+        marker_75171fa87596c1f639aab27716fa9c79.bindPopup(popup_c528b9a909738bd1bc953c00440012e3)
+        ;
+
+        
+    
+    
+            var marker_3473ba9442e021c5c4f9acfff1bc003f = L.marker(
+                [55.81503, 37.73209],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b807f0d5bc681d5cef830cb2e1aa50d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3473ba9442e021c5c4f9acfff1bc003f.setIcon(icon_b807f0d5bc681d5cef830cb2e1aa50d9);
+        
+    
+        var popup_34e4ac81a7f58e273292777860a8c77b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_721fb2a646a29c2405c03536cb5ce772 = $(`<div id="html_721fb2a646a29c2405c03536cb5ce772" style="width: 100.0%; height: 100.0%;">Улица Подбельского (55.81503, 37.73209) - NOT FOUND</div>`)[0];
+                popup_34e4ac81a7f58e273292777860a8c77b.setContent(html_721fb2a646a29c2405c03536cb5ce772);
+            
+        
+
+        marker_3473ba9442e021c5c4f9acfff1bc003f.bindPopup(popup_34e4ac81a7f58e273292777860a8c77b)
+        ;
+
+        
+    
+    
+            var marker_043e85583b81ee7cb1958f381c23382b = L.marker(
+                [55.81336, 37.73524],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_1919a9d73189cdfe271e597445dfafbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_043e85583b81ee7cb1958f381c23382b.setIcon(icon_1919a9d73189cdfe271e597445dfafbb);
+        
+    
+        var popup_05ee53d1c1cebd9e77adf141467cade9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_686735aac14da59c41439d16669c774c = $(`<div id="html_686735aac14da59c41439d16669c774c" style="width: 100.0%; height: 100.0%;">Улица Подбельского (55.81336, 37.73524) - NOT FOUND</div>`)[0];
+                popup_05ee53d1c1cebd9e77adf141467cade9.setContent(html_686735aac14da59c41439d16669c774c);
+            
+        
+
+        marker_043e85583b81ee7cb1958f381c23382b.bindPopup(popup_05ee53d1c1cebd9e77adf141467cade9)
+        ;
+
+        
+    
+    
+            var marker_46d4215efc9f0f5aa6adfde6a1c01777 = L.marker(
+                [55.77691, 37.51692],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_63a6bb242360d0be999f2ee4770170f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_46d4215efc9f0f5aa6adfde6a1c01777.setIcon(icon_63a6bb242360d0be999f2ee4770170f2);
+        
+    
+        var popup_5e1807203baf17f77b3b4e855ee3dc05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbbde74fb801691585f6804fefbd7875 = $(`<div id="html_cbbde74fb801691585f6804fefbd7875" style="width: 100.0%; height: 100.0%;">Полежаевская (55.77691, 37.51692) - Северный административный округ</div>`)[0];
+                popup_5e1807203baf17f77b3b4e855ee3dc05.setContent(html_cbbde74fb801691585f6804fefbd7875);
+            
+        
+
+        marker_46d4215efc9f0f5aa6adfde6a1c01777.bindPopup(popup_5e1807203baf17f77b3b4e855ee3dc05)
+        ;
+
+        
+    
+    
+            var marker_e1072aae7c09ae3e7f826a99e77e64e3 = L.marker(
+                [55.73654, 37.61856],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_348e190531d9e91d6f33f6540d5f4454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1072aae7c09ae3e7f826a99e77e64e3.setIcon(icon_348e190531d9e91d6f33f6540d5f4454);
+        
+    
+        var popup_d793756902107e8213c880c0484ce46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaec28762aad0142f109b1c5c66fca02 = $(`<div id="html_aaec28762aad0142f109b1c5c66fca02" style="width: 100.0%; height: 100.0%;">Полянка (55.73654, 37.61856) - Центральный административный округ</div>`)[0];
+                popup_d793756902107e8213c880c0484ce46f.setContent(html_aaec28762aad0142f109b1c5c66fca02);
+            
+        
+
+        marker_e1072aae7c09ae3e7f826a99e77e64e3.bindPopup(popup_d793756902107e8213c880c0484ce46f)
+        ;
+
+        
+    
+    
+            var marker_09947018b1d6b7dff547b570ba4462b7 = L.marker(
+                [55.61354, 37.60499],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7314c9fa389a713b6e9394e66a84ae8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09947018b1d6b7dff547b570ba4462b7.setIcon(icon_7314c9fa389a713b6e9394e66a84ae8d);
+        
+    
+        var popup_53f695c4947fff3fd1ba6661c92aef87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e83657c820bb03f093ea1a55ea524ac = $(`<div id="html_9e83657c820bb03f093ea1a55ea524ac" style="width: 100.0%; height: 100.0%;">Пражская (55.61354, 37.60499) - Южный административный округ</div>`)[0];
+                popup_53f695c4947fff3fd1ba6661c92aef87.setContent(html_9e83657c820bb03f093ea1a55ea524ac);
+            
+        
+
+        marker_09947018b1d6b7dff547b570ba4462b7.bindPopup(popup_53f695c4947fff3fd1ba6661c92aef87)
+        ;
+
+        
+    
+    
+            var marker_fe1d9e65418f5a386ce256023ecfad2b = L.marker(
+                [55.79655, 37.71591],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_bc71c8cd8ab4ce2c65758c0cfa1eeae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_fe1d9e65418f5a386ce256023ecfad2b.setIcon(icon_bc71c8cd8ab4ce2c65758c0cfa1eeae9);
+        
+    
+        var popup_cda9d8bb06c185b07411ce421c6d14d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf6766b71c127b40bae2ac749884c32 = $(`<div id="html_ecf6766b71c127b40bae2ac749884c32" style="width: 100.0%; height: 100.0%;">Преображенская площадь (55.79655, 37.71591) - NOT FOUND</div>`)[0];
+                popup_cda9d8bb06c185b07411ce421c6d14d5.setContent(html_ecf6766b71c127b40bae2ac749884c32);
+            
+        
+
+        marker_fe1d9e65418f5a386ce256023ecfad2b.bindPopup(popup_cda9d8bb06c185b07411ce421c6d14d5)
+        ;
+
+        
+    
+    
+            var marker_2311a098b136de19eeb392ed0a282f1f = L.marker(
+                [55.67822, 37.56381],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_dfedfe0b253a77c611641c8200292333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2311a098b136de19eeb392ed0a282f1f.setIcon(icon_dfedfe0b253a77c611641c8200292333);
+        
+    
+        var popup_c2eb43d75ef9c500da6c119e662e33a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5faefb94f3e2f2f24a46f26840197fd9 = $(`<div id="html_5faefb94f3e2f2f24a46f26840197fd9" style="width: 100.0%; height: 100.0%;">Профсоюзная (55.67822, 37.56381) - Юго-Западный административный округ</div>`)[0];
+                popup_c2eb43d75ef9c500da6c119e662e33a7.setContent(html_5faefb94f3e2f2f24a46f26840197fd9);
+            
+        
+
+        marker_2311a098b136de19eeb392ed0a282f1f.bindPopup(popup_c2eb43d75ef9c500da6c119e662e33a7)
+        ;
+
+        
+    
+    
+            var marker_00c536dcf11d1b824d719a52c22adf5b = L.marker(
+                [55.73171, 37.66726],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3f570badce210f30068bb4119f24e6ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00c536dcf11d1b824d719a52c22adf5b.setIcon(icon_3f570badce210f30068bb4119f24e6ed);
+        
+    
+        var popup_7b7380e194dc105b31caa54371f7adc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13b84c28283f374e9aaadfe4b5fa956c = $(`<div id="html_13b84c28283f374e9aaadfe4b5fa956c" style="width: 100.0%; height: 100.0%;">Пролетарская (55.73171, 37.66726) - Центральный административный округ</div>`)[0];
+                popup_7b7380e194dc105b31caa54371f7adc2.setContent(html_13b84c28283f374e9aaadfe4b5fa956c);
+            
+        
+
+        marker_00c536dcf11d1b824d719a52c22adf5b.bindPopup(popup_7b7380e194dc105b31caa54371f7adc2)
+        ;
+
+        
+    
+    
+            var marker_d0f553d70d5909f8439cb5fd19fca14e = L.marker(
+                [55.698344, 37.850869],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_87f6eded7f924a6ffde868f4cd7f4459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d0f553d70d5909f8439cb5fd19fca14e.setIcon(icon_87f6eded7f924a6ffde868f4cd7f4459);
+        
+    
+        var popup_e1476181fc047b287de93ff12089cb90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3385a9d8763684ccce91ca66b07571b0 = $(`<div id="html_3385a9d8763684ccce91ca66b07571b0" style="width: 100.0%; height: 100.0%;">Пронская (стр.) (55.698344, 37.850869) - NOT FOUND</div>`)[0];
+                popup_e1476181fc047b287de93ff12089cb90.setContent(html_3385a9d8763684ccce91ca66b07571b0);
+            
+        
+
+        marker_d0f553d70d5909f8439cb5fd19fca14e.bindPopup(popup_e1476181fc047b287de93ff12089cb90)
+        ;
+
+        
+    
+    
+            var marker_fad017bee5120707c295208efb72a7ae = L.marker(
+                [55.76565, 37.60417],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f5239bf1a240b35863e21746838d197e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fad017bee5120707c295208efb72a7ae.setIcon(icon_f5239bf1a240b35863e21746838d197e);
+        
+    
+        var popup_d2f433d82211360883557ea2a6d69a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fec35bea38152d27cf59fb913315f89c = $(`<div id="html_fec35bea38152d27cf59fb913315f89c" style="width: 100.0%; height: 100.0%;">Пушкинская (55.76565, 37.60417) - Центральный административный округ</div>`)[0];
+                popup_d2f433d82211360883557ea2a6d69a8c.setContent(html_fec35bea38152d27cf59fb913315f89c);
+            
+        
+
+        marker_fad017bee5120707c295208efb72a7ae.bindPopup(popup_d2f433d82211360883557ea2a6d69a8c)
+        ;
+
+        
+    
+    
+            var marker_c1ce81c2f22831fedddf33c52cb20ea1 = L.marker(
+                [55.85378, 37.47679],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_2383bd3487583f6c4a02e52adfa6834f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c1ce81c2f22831fedddf33c52cb20ea1.setIcon(icon_2383bd3487583f6c4a02e52adfa6834f);
+        
+    
+        var popup_75d720d26a66301e687340722e9ddcb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_849faced1d74e9782b1d922ee45d1c2e = $(`<div id="html_849faced1d74e9782b1d922ee45d1c2e" style="width: 100.0%; height: 100.0%;">Речной вокзал (55.85378, 37.47679) - Северный административный округ</div>`)[0];
+                popup_75d720d26a66301e687340722e9ddcb3.setContent(html_849faced1d74e9782b1d922ee45d1c2e);
+            
+        
+
+        marker_c1ce81c2f22831fedddf33c52cb20ea1.bindPopup(popup_75d720d26a66301e687340722e9ddcb3)
+        ;
+
+        
+    
+    
+            var marker_2d71a0f62142d3129bf3ea19411a63da = L.marker(
+                [55.75646, 37.62321],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_af4183eb97b2bc8572fcc52b6a263c26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d71a0f62142d3129bf3ea19411a63da.setIcon(icon_af4183eb97b2bc8572fcc52b6a263c26);
+        
+    
+        var popup_56de497f10d3c506e39e25af8c554b7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95d69f28bc329344ad7eddc4cf2c8b5e = $(`<div id="html_95d69f28bc329344ad7eddc4cf2c8b5e" style="width: 100.0%; height: 100.0%;">Площадь Революции (55.75646, 37.62321) - Центральный административный округ</div>`)[0];
+                popup_56de497f10d3c506e39e25af8c554b7c.setContent(html_95d69f28bc329344ad7eddc4cf2c8b5e);
+            
+        
+
+        marker_2d71a0f62142d3129bf3ea19411a63da.bindPopup(popup_56de497f10d3c506e39e25af8c554b7c)
+        ;
+
+        
+    
+    
+            var marker_d3279c7798253a1403993899e5cf004a = L.marker(
+                [55.79222, 37.63557],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f762b56273b9cdddafe91786d71855be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d3279c7798253a1403993899e5cf004a.setIcon(icon_f762b56273b9cdddafe91786d71855be);
+        
+    
+        var popup_42ee10f992dd63124f7bcc85779fb94e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55f2de9c995a98ac0ab4952000025c6b = $(`<div id="html_55f2de9c995a98ac0ab4952000025c6b" style="width: 100.0%; height: 100.0%;">Рижская (55.79222, 37.63557) - Центральный административный округ</div>`)[0];
+                popup_42ee10f992dd63124f7bcc85779fb94e.setContent(html_55f2de9c995a98ac0ab4952000025c6b);
+            
+        
+
+        marker_d3279c7798253a1403993899e5cf004a.bindPopup(popup_42ee10f992dd63124f7bcc85779fb94e)
+        ;
+
+        
+    
+    
+            var marker_2888b14c01038b8d114ef3f8dc3b34c5 = L.marker(
+                [55.746487, 37.682631],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_8794b3559e93eebd1ee63fcca510f4b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2888b14c01038b8d114ef3f8dc3b34c5.setIcon(icon_8794b3559e93eebd1ee63fcca510f4b7);
+        
+    
+        var popup_d2c858e3e1d81cf8f43ea844ef5375af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8aba0af87348b4088d06c3f9883ca25 = $(`<div id="html_d8aba0af87348b4088d06c3f9883ca25" style="width: 100.0%; height: 100.0%;">Римская (55.746487, 37.682631) - NOT FOUND</div>`)[0];
+                popup_d2c858e3e1d81cf8f43ea844ef5375af.setContent(html_d8aba0af87348b4088d06c3f9883ca25);
+            
+        
+
+        marker_2888b14c01038b8d114ef3f8dc3b34c5.bindPopup(popup_d2c858e3e1d81cf8f43ea844ef5375af)
+        ;
+
+        
+    
+    
+            var marker_508ab5f828e1380b81ad50771f04226c = L.marker(
+                [55.71753, 37.79425],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_20fefab7b5d2d7f2196cb49a5ce39112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_508ab5f828e1380b81ad50771f04226c.setIcon(icon_20fefab7b5d2d7f2196cb49a5ce39112);
+        
+    
+        var popup_86f6b057eeb081104a5c1df1d86c1597 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a56dc2e4e86fe7840448189570beae = $(`<div id="html_16a56dc2e4e86fe7840448189570beae" style="width: 100.0%; height: 100.0%;">Рязанский проспект (55.71753, 37.79425) - NOT FOUND</div>`)[0];
+                popup_86f6b057eeb081104a5c1df1d86c1597.setContent(html_16a56dc2e4e86fe7840448189570beae);
+            
+        
+
+        marker_508ab5f828e1380b81ad50771f04226c.bindPopup(popup_86f6b057eeb081104a5c1df1d86c1597)
+        ;
+
+        
+    
+    
+            var marker_d9e6d8324b0b8d2e9fe1391355945f03 = L.marker(
+                [55.79421, 37.58666],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7961548549291c13e3ccff17a8219188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d9e6d8324b0b8d2e9fe1391355945f03.setIcon(icon_7961548549291c13e3ccff17a8219188);
+        
+    
+        var popup_86c61813c401e813d256ebcc14991e7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bce0e295bacdd064b2c9078f7be4683 = $(`<div id="html_1bce0e295bacdd064b2c9078f7be4683" style="width: 100.0%; height: 100.0%;">Cавеловская (55.79421, 37.58666) - NOT FOUND</div>`)[0];
+                popup_86c61813c401e813d256ebcc14991e7d.setContent(html_1bce0e295bacdd064b2c9078f7be4683);
+            
+        
+
+        marker_d9e6d8324b0b8d2e9fe1391355945f03.bindPopup(popup_86c61813c401e813d256ebcc14991e7d)
+        ;
+
+        
+    
+    
+            var marker_a1dca2dbf086825f615308c42ec77c97 = L.marker(
+                [55.80955, 37.79884],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ef62e09a17e2a2ac5002de188b16d3d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a1dca2dbf086825f615308c42ec77c97.setIcon(icon_ef62e09a17e2a2ac5002de188b16d3d1);
+        
+    
+        var popup_30308aa32b43ef2dc2f086c1fa9abe46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe75e402142c829e1ce20994e658d135 = $(`<div id="html_fe75e402142c829e1ce20994e658d135" style="width: 100.0%; height: 100.0%;">Щелковская (55.80955, 37.79884) - NOT FOUND</div>`)[0];
+                popup_30308aa32b43ef2dc2f086c1fa9abe46.setContent(html_fe75e402142c829e1ce20994e658d135);
+            
+        
+
+        marker_a1dca2dbf086825f615308c42ec77c97.bindPopup(popup_30308aa32b43ef2dc2f086c1fa9abe46)
+        ;
+
+        
+    
+    
+            var marker_5ff32aca6d8ea51acec6b3b7bae82661 = L.marker(
+                [55.80796, 37.46629],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0c91b10f68b1e7786a23d22e20525bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5ff32aca6d8ea51acec6b3b7bae82661.setIcon(icon_0c91b10f68b1e7786a23d22e20525bf6);
+        
+    
+        var popup_8afe5ded0d0385933e17ade2e2e21c92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c9cb4cbc8f178c3c01cd063b2aa7940 = $(`<div id="html_0c9cb4cbc8f178c3c01cd063b2aa7940" style="width: 100.0%; height: 100.0%;">Щукинская (55.80796, 37.46629) - Северо-Западный административный округ</div>`)[0];
+                popup_8afe5ded0d0385933e17ade2e2e21c92.setContent(html_0c9cb4cbc8f178c3c01cd063b2aa7940);
+            
+        
+
+        marker_5ff32aca6d8ea51acec6b3b7bae82661.bindPopup(popup_8afe5ded0d0385933e17ade2e2e21c92)
+        ;
+
+        
+    
+    
+            var marker_f28fc185a1e7f99e3777cd870f69ac94 = L.marker(
+                [55.78279, 37.71844],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_aacfb9854a9117dd884aaf160201d59f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f28fc185a1e7f99e3777cd870f69ac94.setIcon(icon_aacfb9854a9117dd884aaf160201d59f);
+        
+    
+        var popup_3ee3c780140f158300272d0736eb3d9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c342ee12fd2c1c15ae89b3213901e4 = $(`<div id="html_e4c342ee12fd2c1c15ae89b3213901e4" style="width: 100.0%; height: 100.0%;">Cеменовская (55.78279, 37.71844) - NOT FOUND</div>`)[0];
+                popup_3ee3c780140f158300272d0736eb3d9e.setContent(html_e4c342ee12fd2c1c15ae89b3213901e4);
+            
+        
+
+        marker_f28fc185a1e7f99e3777cd870f69ac94.bindPopup(popup_3ee3c780140f158300272d0736eb3d9e)
+        ;
+
+        
+    
+    
+            var marker_51f0ea032a56b12e72c32f51edc82081 = L.marker(
+                [55.72658, 37.62462],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_a79aaa11a83dc0fb319856a74db76c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_51f0ea032a56b12e72c32f51edc82081.setIcon(icon_a79aaa11a83dc0fb319856a74db76c6d);
+        
+    
+        var popup_4a373ff4f316093c74769531ba214b29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3812bd33dc5f86ada9b801c43b52ae5b = $(`<div id="html_3812bd33dc5f86ada9b801c43b52ae5b" style="width: 100.0%; height: 100.0%;">Cерпуховская (55.72658, 37.62462) - NOT FOUND</div>`)[0];
+                popup_4a373ff4f316093c74769531ba214b29.setContent(html_3812bd33dc5f86ada9b801c43b52ae5b);
+            
+        
+
+        marker_51f0ea032a56b12e72c32f51edc82081.bindPopup(popup_4a373ff4f316093c74769531ba214b29)
+        ;
+
+        
+    
+    
+            var marker_db89f85ccd5cd6ef194261912bcccf60 = L.marker(
+                [55.65121, 37.59939],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f82732f44e1de72c5e69a495249de7e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_db89f85ccd5cd6ef194261912bcccf60.setIcon(icon_f82732f44e1de72c5e69a495249de7e8);
+        
+    
+        var popup_de9b8a31ec2b96a3a4caf5829e79a265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5cfdc7b89475e6ab371c6c203d42de = $(`<div id="html_3b5cfdc7b89475e6ab371c6c203d42de" style="width: 100.0%; height: 100.0%;">Cевастопольская (55.65121, 37.59939) - NOT FOUND</div>`)[0];
+                popup_de9b8a31ec2b96a3a4caf5829e79a265.setContent(html_3b5cfdc7b89475e6ab371c6c203d42de);
+            
+        
+
+        marker_db89f85ccd5cd6ef194261912bcccf60.bindPopup(popup_de9b8a31ec2b96a3a4caf5829e79a265)
+        ;
+
+        
+    
+    
+            var marker_94b914d85117620cfe1eca123ff066a6 = L.marker(
+                [55.71886, 37.60797],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7d2ff7a2bfdb686fbe8819bf43c1bb05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94b914d85117620cfe1eca123ff066a6.setIcon(icon_7d2ff7a2bfdb686fbe8819bf43c1bb05);
+        
+    
+        var popup_bcb65b2c677f8a8ee4ac20f9c2d557b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc484b7df9ee5d1bc25c906a1e4bdc83 = $(`<div id="html_cc484b7df9ee5d1bc25c906a1e4bdc83" style="width: 100.0%; height: 100.0%;">Шаболовская (55.71886, 37.60797) - Южный административный округ</div>`)[0];
+                popup_bcb65b2c677f8a8ee4ac20f9c2d557b1.setContent(html_cc484b7df9ee5d1bc25c906a1e4bdc83);
+            
+        
+
+        marker_94b914d85117620cfe1eca123ff066a6.bindPopup(popup_bcb65b2c677f8a8ee4ac20f9c2d557b1)
+        ;
+
+        
+    
+    
+            var marker_c69ada54eb5302ea64b6dfb7ba3eb050 = L.marker(
+                [55.84937, 37.43951],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e0444dd2c98d3d2c0339c7776ed323e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c69ada54eb5302ea64b6dfb7ba3eb050.setIcon(icon_e0444dd2c98d3d2c0339c7776ed323e3);
+        
+    
+        var popup_343b9697fb3e17d25e625ef3067f1377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dee5c6d46e97f33f28c366514c82982d = $(`<div id="html_dee5c6d46e97f33f28c366514c82982d" style="width: 100.0%; height: 100.0%;">Cходненская (55.84937, 37.43951) - NOT FOUND</div>`)[0];
+                popup_343b9697fb3e17d25e625ef3067f1377.setContent(html_dee5c6d46e97f33f28c366514c82982d);
+            
+        
+
+        marker_c69ada54eb5302ea64b6dfb7ba3eb050.bindPopup(popup_343b9697fb3e17d25e625ef3067f1377)
+        ;
+
+        
+    
+    
+            var marker_7c1457f059483d895ec1ba74c498a490 = L.marker(
+                [55.729508, 37.468829],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_2fb1c15a4afd0efd15586515cc2d7e6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_7c1457f059483d895ec1ba74c498a490.setIcon(icon_2fb1c15a4afd0efd15586515cc2d7e6b);
+        
+    
+        var popup_5e08fb6749da2022d88fbf4917d38242 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d4361a703d3d7e649784189f6b0e68e = $(`<div id="html_5d4361a703d3d7e649784189f6b0e68e" style="width: 100.0%; height: 100.0%;">Cлавянский бульвар (стр.) (55.729508, 37.468829) - NOT FOUND</div>`)[0];
+                popup_5e08fb6749da2022d88fbf4917d38242.setContent(html_5d4361a703d3d7e649784189f6b0e68e);
+            
+        
+
+        marker_7c1457f059483d895ec1ba74c498a490.bindPopup(popup_5e08fb6749da2022d88fbf4917d38242)
+        ;
+
+        
+    
+    
+            var marker_5bb6e0835e811f12d1e62918156d601d = L.marker(
+                [55.74823, 37.58384],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_f5253d9cb745e42017e3e98e4a3fa4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5bb6e0835e811f12d1e62918156d601d.setIcon(icon_f5253d9cb745e42017e3e98e4a3fa4da);
+        
+    
+        var popup_18f8e7eb28908ad082c791855349d8ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e9194508eddd2ba6f000e607f5c14eb = $(`<div id="html_7e9194508eddd2ba6f000e607f5c14eb" style="width: 100.0%; height: 100.0%;">Cмоленская (55.74823, 37.58384) - NOT FOUND</div>`)[0];
+                popup_18f8e7eb28908ad082c791855349d8ca.setContent(html_7e9194508eddd2ba6f000e607f5c14eb);
+            
+        
+
+        marker_5bb6e0835e811f12d1e62918156d601d.bindPopup(popup_18f8e7eb28908ad082c791855349d8ca)
+        ;
+
+        
+    
+    
+            var marker_f75bc624b81c25619371aa19372840cf = L.marker(
+                [55.80518, 37.51495],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_0fe822a904717de49f1aade3df5da14a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f75bc624b81c25619371aa19372840cf.setIcon(icon_0fe822a904717de49f1aade3df5da14a);
+        
+    
+        var popup_5a5757f93fb412286c34eb85fec45583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1da8fcf7da373da36733859732880ab0 = $(`<div id="html_1da8fcf7da373da36733859732880ab0" style="width: 100.0%; height: 100.0%;">Cокол (55.80518, 37.51495) - NOT FOUND</div>`)[0];
+                popup_5a5757f93fb412286c34eb85fec45583.setContent(html_1da8fcf7da373da36733859732880ab0);
+            
+        
+
+        marker_f75bc624b81c25619371aa19372840cf.bindPopup(popup_5a5757f93fb412286c34eb85fec45583)
+        ;
+
+        
+    
+    
+            var marker_5d45f35a7af79cdb2478558bca26fec8 = L.marker(
+                [55.78893, 37.67943],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_9f810561b80e01a75ae9a804d9f32a64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5d45f35a7af79cdb2478558bca26fec8.setIcon(icon_9f810561b80e01a75ae9a804d9f32a64);
+        
+    
+        var popup_68b7774e6fbb45830a02b039df1b567a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9c8cadd11e7b72e136d234206e5d11b = $(`<div id="html_a9c8cadd11e7b72e136d234206e5d11b" style="width: 100.0%; height: 100.0%;">Cокольники (55.78893, 37.67943) - NOT FOUND</div>`)[0];
+                popup_68b7774e6fbb45830a02b039df1b567a.setContent(html_a9c8cadd11e7b72e136d234206e5d11b);
+            
+        
+
+        marker_5d45f35a7af79cdb2478558bca26fec8.bindPopup(popup_68b7774e6fbb45830a02b039df1b567a)
+        ;
+
+        
+    
+    
+            var marker_6ce8ba0ef1da8306b53627e11d23ec1d = L.marker(
+                [55.72397, 37.56547],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ddbe0f4365cd3195b5879fedaeba05a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6ce8ba0ef1da8306b53627e11d23ec1d.setIcon(icon_ddbe0f4365cd3195b5879fedaeba05a5);
+        
+    
+        var popup_3a65eb967c71875ec5c7ecd465299c69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d8ca11df87e6cfffc852453e69f5132 = $(`<div id="html_1d8ca11df87e6cfffc852453e69f5132" style="width: 100.0%; height: 100.0%;">Cпортивная (55.72397, 37.56547) - NOT FOUND</div>`)[0];
+                popup_3a65eb967c71875ec5c7ecd465299c69.setContent(html_1d8ca11df87e6cfffc852453e69f5132);
+            
+        
+
+        marker_6ce8ba0ef1da8306b53627e11d23ec1d.bindPopup(popup_3a65eb967c71875ec5c7ecd465299c69)
+        ;
+
+        
+    
+    
+            var marker_bb731154bbd47510ac266a8d65ba9f22 = L.marker(
+                [55.765551, 37.635261],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_4f64426817462b7fa3e32a59eed4f48e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_bb731154bbd47510ac266a8d65ba9f22.setIcon(icon_4f64426817462b7fa3e32a59eed4f48e);
+        
+    
+        var popup_4b2c9c2d4a72531854581787d4085817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec03f2e72fd78d0bcf8c3441effc7e9 = $(`<div id="html_4ec03f2e72fd78d0bcf8c3441effc7e9" style="width: 100.0%; height: 100.0%;">Cретенский бульвар (стр.) (55.765551, 37.635261) - NOT FOUND</div>`)[0];
+                popup_4b2c9c2d4a72531854581787d4085817.setContent(html_4ec03f2e72fd78d0bcf8c3441effc7e9);
+            
+        
+
+        marker_bb731154bbd47510ac266a8d65ba9f22.bindPopup(popup_4b2c9c2d4a72531854581787d4085817)
+        ;
+
+        
+    
+    
+            var marker_e1886a2b8ab2967738c145aa95581655 = L.marker(
+                [55.80435, 37.396363],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e78550f25cc77cd8deca9db31aa3466e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e1886a2b8ab2967738c145aa95581655.setIcon(icon_e78550f25cc77cd8deca9db31aa3466e);
+        
+    
+        var popup_4fc711334c7c4af90cff36db6d32dbbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a494b48acf299e5162043a95c61af38a = $(`<div id="html_a494b48acf299e5162043a95c61af38a" style="width: 100.0%; height: 100.0%;">Cтрогино (стр.) (55.80435, 37.396363) - NOT FOUND</div>`)[0];
+                popup_4fc711334c7c4af90cff36db6d32dbbe.setContent(html_a494b48acf299e5162043a95c61af38a);
+            
+        
+
+        marker_e1886a2b8ab2967738c145aa95581655.bindPopup(popup_4fc711334c7c4af90cff36db6d32dbbe)
+        ;
+
+        
+    
+    
+            var marker_64aec1a42f4a5ca72654387359a4f9dd = L.marker(
+                [55.73873, 37.54825],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_828aa3c947a61142491343efb39621f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_64aec1a42f4a5ca72654387359a4f9dd.setIcon(icon_828aa3c947a61142491343efb39621f0);
+        
+    
+        var popup_1d0d4b8398a6eab77b2e1fc07071b7b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42f252fb478ddb530375e62643ae8b32 = $(`<div id="html_42f252fb478ddb530375e62643ae8b32" style="width: 100.0%; height: 100.0%;">Cтуденческая (55.73873, 37.54825) - NOT FOUND</div>`)[0];
+                popup_1d0d4b8398a6eab77b2e1fc07071b7b7.setContent(html_42f252fb478ddb530375e62643ae8b32);
+            
+        
+
+        marker_64aec1a42f4a5ca72654387359a4f9dd.bindPopup(popup_1d0d4b8398a6eab77b2e1fc07071b7b7)
+        ;
+
+        
+    
+    
+            var marker_9e27645a4902b08a4605fbd0da734253 = L.marker(
+                [55.77211, 37.63239],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_5ce97478a52bde88b3f6fc70cf825c2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9e27645a4902b08a4605fbd0da734253.setIcon(icon_5ce97478a52bde88b3f6fc70cf825c2b);
+        
+    
+        var popup_ce4b93a6ac2d1f4b271592b460895362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d276a4b36586d760441fb66baac0a642 = $(`<div id="html_d276a4b36586d760441fb66baac0a642" style="width: 100.0%; height: 100.0%;">Cухаревская (55.77211, 37.63239) - NOT FOUND</div>`)[0];
+                popup_ce4b93a6ac2d1f4b271592b460895362.setContent(html_d276a4b36586d760441fb66baac0a642);
+            
+        
+
+        marker_9e27645a4902b08a4605fbd0da734253.bindPopup(popup_ce4b93a6ac2d1f4b271592b460895362)
+        ;
+
+        
+    
+    
+            var marker_818a9076489f427199cf9a2e0a55cd75 = L.marker(
+                [55.781984, 37.614487],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_9ddb263ebe36d1fa2a31cdf34bd4f71b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_818a9076489f427199cf9a2e0a55cd75.setIcon(icon_9ddb263ebe36d1fa2a31cdf34bd4f71b);
+        
+    
+        var popup_eacfc6812a604fa6ed0e7471e9e3096d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a300002ac7861a9f8c875e69d71b7f5 = $(`<div id="html_1a300002ac7861a9f8c875e69d71b7f5" style="width: 100.0%; height: 100.0%;">Площадь Cуворова (стр.) (55.781984, 37.614487) - NOT FOUND</div>`)[0];
+                popup_eacfc6812a604fa6ed0e7471e9e3096d.setContent(html_1a300002ac7861a9f8c875e69d71b7f5);
+            
+        
+
+        marker_818a9076489f427199cf9a2e0a55cd75.bindPopup(popup_eacfc6812a604fa6ed0e7471e9e3096d)
+        ;
+
+        
+    
+    
+            var marker_a4aa45315c69cecc20196ef20dad82f2 = L.marker(
+                [55.85543, 37.65419],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d3a2a1b6e368c26a3886a416bd90cef8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a4aa45315c69cecc20196ef20dad82f2.setIcon(icon_d3a2a1b6e368c26a3886a416bd90cef8);
+        
+    
+        var popup_f318db1f41555f92f3c1808a19646e70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea1bacc88cd2028c617fc299b3ef21e7 = $(`<div id="html_ea1bacc88cd2028c617fc299b3ef21e7" style="width: 100.0%; height: 100.0%;">Cвиблово (55.85543, 37.65419) - NOT FOUND</div>`)[0];
+                popup_f318db1f41555f92f3c1808a19646e70.setContent(html_ea1bacc88cd2028c617fc299b3ef21e7);
+            
+        
+
+        marker_a4aa45315c69cecc20196ef20dad82f2.bindPopup(popup_f318db1f41555f92f3c1808a19646e70)
+        ;
+
+        
+    
+    
+            var marker_7e03fb2436e3eda2061f7b610f3b5515 = L.marker(
+                [55.74255, 37.65389],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_85983b56d175d2fb4f2a7c465c56097e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e03fb2436e3eda2061f7b610f3b5515.setIcon(icon_85983b56d175d2fb4f2a7c465c56097e);
+        
+    
+        var popup_609d9a86244b2d3003a0c006d2431c43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b78a64736791a74dff7cab4b0ba55ae = $(`<div id="html_0b78a64736791a74dff7cab4b0ba55ae" style="width: 100.0%; height: 100.0%;">Таганская (55.74255, 37.65389) - Центральный административный округ</div>`)[0];
+                popup_609d9a86244b2d3003a0c006d2431c43.setContent(html_0b78a64736791a74dff7cab4b0ba55ae);
+            
+        
+
+        marker_7e03fb2436e3eda2061f7b610f3b5515.bindPopup(popup_609d9a86244b2d3003a0c006d2431c43)
+        ;
+
+        
+    
+    
+            var marker_ecc629aa183b592f23e9bc7d4c541258 = L.marker(
+                [55.75857, 37.6177],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3b5d74676693a729ffc9331817c74952 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecc629aa183b592f23e9bc7d4c541258.setIcon(icon_3b5d74676693a729ffc9331817c74952);
+        
+    
+        var popup_24f721b043c40116f22d62fe09745ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d49c9d253afa03fc04ad95fd3044a7f1 = $(`<div id="html_d49c9d253afa03fc04ad95fd3044a7f1" style="width: 100.0%; height: 100.0%;">Театральная (55.75857, 37.6177) - Центральный административный округ</div>`)[0];
+                popup_24f721b043c40116f22d62fe09745ed3.setContent(html_d49c9d253afa03fc04ad95fd3044a7f1);
+            
+        
+
+        marker_ecc629aa183b592f23e9bc7d4c541258.bindPopup(popup_24f721b043c40116f22d62fe09745ed3)
+        ;
+
+        
+    
+    
+            var marker_7bbafac86157cd3f5906265029358568 = L.marker(
+                [55.70947, 37.73282],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e7031a20197cb7ca32ba7a87e82436fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_7bbafac86157cd3f5906265029358568.setIcon(icon_e7031a20197cb7ca32ba7a87e82436fd);
+        
+    
+        var popup_4f205ddb2e09793aee2a9bc0987f2f79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ce1f9d5eba1fe4c231229517cdf4f3f = $(`<div id="html_4ce1f9d5eba1fe4c231229517cdf4f3f" style="width: 100.0%; height: 100.0%;">Текстильшики (55.70947, 37.73282) - NOT FOUND</div>`)[0];
+                popup_4f205ddb2e09793aee2a9bc0987f2f79.setContent(html_4ce1f9d5eba1fe4c231229517cdf4f3f);
+            
+        
+
+        marker_7bbafac86157cd3f5906265029358568.bindPopup(popup_4f205ddb2e09793aee2a9bc0987f2f79)
+        ;
+
+        
+    
+    
+            var marker_94ceaa1d95093d02c3d3705cee4dc62d = L.marker(
+                [55.61814, 37.50814],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_d836b7b92c096f3fa219db3c5b6029fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_94ceaa1d95093d02c3d3705cee4dc62d.setIcon(icon_d836b7b92c096f3fa219db3c5b6029fa);
+        
+    
+        var popup_7f91df3997c95c6fc6d6e268a65e4f1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_360d4399c665206ff8580940d66aebf5 = $(`<div id="html_360d4399c665206ff8580940d66aebf5" style="width: 100.0%; height: 100.0%;">Теплый стан (55.61814, 37.50814) - NOT FOUND</div>`)[0];
+                popup_7f91df3997c95c6fc6d6e268a65e4f1a.setContent(html_360d4399c665206ff8580940d66aebf5);
+            
+        
+
+        marker_94ceaa1d95093d02c3d3705cee4dc62d.bindPopup(popup_7f91df3997c95c6fc6d6e268a65e4f1a)
+        ;
+
+        
+    
+    
+            var marker_a9ceea233ef47f7086827744679770a0 = L.marker(
+                [55.81842, 37.57571],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_52c12b238c89a9f6d93e3496c5e9aae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a9ceea233ef47f7086827744679770a0.setIcon(icon_52c12b238c89a9f6d93e3496c5e9aae2);
+        
+    
+        var popup_f831d418d302fc69045ac90ff12b085e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2c061a8db923597c2b1bee111ba9f60 = $(`<div id="html_d2c061a8db923597c2b1bee111ba9f60" style="width: 100.0%; height: 100.0%;">Тимирязевская (55.81842, 37.57571) - Северо-Восточный административный округ</div>`)[0];
+                popup_f831d418d302fc69045ac90ff12b085e.setContent(html_d2c061a8db923597c2b1bee111ba9f60);
+            
+        
+
+        marker_a9ceea233ef47f7086827744679770a0.bindPopup(popup_f831d418d302fc69045ac90ff12b085e)
+        ;
+
+        
+    
+    
+            var marker_79df1ffdabc7c82f13db09463319dca6 = L.marker(
+                [55.74061, 37.62492],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_923391c90545da6cd7c55d5df93fac1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79df1ffdabc7c82f13db09463319dca6.setIcon(icon_923391c90545da6cd7c55d5df93fac1c);
+        
+    
+        var popup_d3b2ce3db517af57ba4870b88fa8d2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_857603b0ecba4c655fa369001662ffdf = $(`<div id="html_857603b0ecba4c655fa369001662ffdf" style="width: 100.0%; height: 100.0%;">Третьяковская (55.74061, 37.62492) - Центральный административный округ</div>`)[0];
+                popup_d3b2ce3db517af57ba4870b88fa8d2b1.setContent(html_857603b0ecba4c655fa369001662ffdf);
+            
+        
+
+        marker_79df1ffdabc7c82f13db09463319dca6.bindPopup(popup_d3b2ce3db517af57ba4870b88fa8d2b1)
+        ;
+
+        
+    
+    
+            var marker_4de575dca2a1c19af978b4507304c914 = L.marker(
+                [55.767605, 37.6221],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_b582e01b87f3a8d9ff7b99c07abcc055 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4de575dca2a1c19af978b4507304c914.setIcon(icon_b582e01b87f3a8d9ff7b99c07abcc055);
+        
+    
+        var popup_3cd84666e8f9320ac4e1f727cd68b4df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f86f00f67904ad30115ba63df46db6 = $(`<div id="html_e9f86f00f67904ad30115ba63df46db6" style="width: 100.0%; height: 100.0%;">Трубная (стр.) (55.767605, 37.6221) - NOT FOUND</div>`)[0];
+                popup_3cd84666e8f9320ac4e1f727cd68b4df.setContent(html_e9f86f00f67904ad30115ba63df46db6);
+            
+        
+
+        marker_4de575dca2a1c19af978b4507304c914.bindPopup(popup_3cd84666e8f9320ac4e1f727cd68b4df)
+        ;
+
+        
+    
+    
+            var marker_4d4396f60dd50cb4436cf6ec046340bf = L.marker(
+                [55.62011, 37.66939],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3d6dace98afbe3b5b8f512d15601f743 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4d4396f60dd50cb4436cf6ec046340bf.setIcon(icon_3d6dace98afbe3b5b8f512d15601f743);
+        
+    
+        var popup_88655b93827ec44b42646abbc767cb9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_973dd3bfbe4456a7292be36471a527b8 = $(`<div id="html_973dd3bfbe4456a7292be36471a527b8" style="width: 100.0%; height: 100.0%;">Царицино (55.62011, 37.66939) - NOT FOUND</div>`)[0];
+                popup_88655b93827ec44b42646abbc767cb9a.setContent(html_973dd3bfbe4456a7292be36471a527b8);
+            
+        
+
+        marker_4d4396f60dd50cb4436cf6ec046340bf.bindPopup(popup_88655b93827ec44b42646abbc767cb9a)
+        ;
+
+        
+    
+    
+            var marker_9fc5d6c70e9fbbcdd2f561af9a94724a = L.marker(
+                [55.7716, 37.62058],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7d0d20b305e4fe3318156844952e8f55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9fc5d6c70e9fbbcdd2f561af9a94724a.setIcon(icon_7d0d20b305e4fe3318156844952e8f55);
+        
+    
+        var popup_04778aa047dcca7a6bece86e5bda3d26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dcb08322677b46964dbcd69f0ddf547 = $(`<div id="html_3dcb08322677b46964dbcd69f0ddf547" style="width: 100.0%; height: 100.0%;">Цветной бульвар (55.7716, 37.62058) - NOT FOUND</div>`)[0];
+                popup_04778aa047dcca7a6bece86e5bda3d26.setContent(html_3dcb08322677b46964dbcd69f0ddf547);
+            
+        
+
+        marker_9fc5d6c70e9fbbcdd2f561af9a94724a.bindPopup(popup_04778aa047dcca7a6bece86e5bda3d26)
+        ;
+
+        
+    
+    
+            var marker_164a5348e81b3b438a42019f63ef8ca1 = L.marker(
+                [55.70901, 37.6226],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7c4f6b226949ec20059faa81de1896b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_164a5348e81b3b438a42019f63ef8ca1.setIcon(icon_7c4f6b226949ec20059faa81de1896b5);
+        
+    
+        var popup_ed8cbb0c3c82e4bb4d45563c1bafab51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f22281428956d91b59a79de4608f288 = $(`<div id="html_7f22281428956d91b59a79de4608f288" style="width: 100.0%; height: 100.0%;">Тульская (55.70901, 37.6226) - Южный административный округ</div>`)[0];
+                popup_ed8cbb0c3c82e4bb4d45563c1bafab51.setContent(html_7f22281428956d91b59a79de4608f288);
+            
+        
+
+        marker_164a5348e81b3b438a42019f63ef8ca1.bindPopup(popup_ed8cbb0c3c82e4bb4d45563c1bafab51)
+        ;
+
+        
+    
+    
+            var marker_d9dcf563e108927c8f10f4f345036be1 = L.marker(
+                [55.7646, 37.63623],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_9f2f295d251c4cf19e55d2ff7d3c96c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9dcf563e108927c8f10f4f345036be1.setIcon(icon_9f2f295d251c4cf19e55d2ff7d3c96c6);
+        
+    
+        var popup_20f17ee9fd3bfc266cd37644be5c62e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faab29cb56e4fcc10cc151a6f9fa38b8 = $(`<div id="html_faab29cb56e4fcc10cc151a6f9fa38b8" style="width: 100.0%; height: 100.0%;">Тургеневская (55.7646, 37.63623) - Центральный административный округ</div>`)[0];
+                popup_20f17ee9fd3bfc266cd37644be5c62e8.setContent(html_faab29cb56e4fcc10cc151a6f9fa38b8);
+            
+        
+
+        marker_d9dcf563e108927c8f10f4f345036be1.bindPopup(popup_20f17ee9fd3bfc266cd37644be5c62e8)
+        ;
+
+        
+    
+    
+            var marker_8e2199dea7a06b96a6b787c66fa8bc7c = L.marker(
+                [55.8258, 37.43621],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_6f6c46a2e81ca1b4f179f233b8482598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8e2199dea7a06b96a6b787c66fa8bc7c.setIcon(icon_6f6c46a2e81ca1b4f179f233b8482598);
+        
+    
+        var popup_b551c8f5c053e226e63e6a72b78df001 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c685cbf2ba711a5d1ed9bfa4a3359416 = $(`<div id="html_c685cbf2ba711a5d1ed9bfa4a3359416" style="width: 100.0%; height: 100.0%;">Тушинская (55.8258, 37.43621) - Северо-Западный административный округ</div>`)[0];
+                popup_b551c8f5c053e226e63e6a72b78df001.setContent(html_c685cbf2ba711a5d1ed9bfa4a3359416);
+            
+        
+
+        marker_8e2199dea7a06b96a6b787c66fa8bc7c.bindPopup(popup_b551c8f5c053e226e63e6a72b78df001)
+        ;
+
+        
+    
+    
+            var marker_cdf71657019a543866e54944c9c2d365 = L.marker(
+                [55.7652, 37.60352],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_266d52f2b996a336e77827b0f58eb082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cdf71657019a543866e54944c9c2d365.setIcon(icon_266d52f2b996a336e77827b0f58eb082);
+        
+    
+        var popup_0f56dace75eaac9dc4c238d6b7d9efd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8920e6b28b204943fb8dff8fa274ab9a = $(`<div id="html_8920e6b28b204943fb8dff8fa274ab9a" style="width: 100.0%; height: 100.0%;">Тверская (55.7652, 37.60352) - Центральный административный округ</div>`)[0];
+                popup_0f56dace75eaac9dc4c238d6b7d9efd7.setContent(html_8920e6b28b204943fb8dff8fa274ab9a);
+            
+        
+
+        marker_cdf71657019a543866e54944c9c2d365.bindPopup(popup_0f56dace75eaac9dc4c238d6b7d9efd7)
+        ;
+
+        
+    
+    
+            var marker_b6c2d8de444343d9d4e628c069738cdf = L.marker(
+                [55.76355, 37.56375],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_3a973310d2af2e5710fec47b426a1f6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6c2d8de444343d9d4e628c069738cdf.setIcon(icon_3a973310d2af2e5710fec47b426a1f6c);
+        
+    
+        var popup_38334b5d98898cb86ae57151b9d6cde3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_784f95a92dc5cc9b118de0a2513b06da = $(`<div id="html_784f95a92dc5cc9b118de0a2513b06da" style="width: 100.0%; height: 100.0%;">Улица 1905 года (55.76355, 37.56375) - Центральный административный округ</div>`)[0];
+                popup_38334b5d98898cb86ae57151b9d6cde3.setContent(html_784f95a92dc5cc9b118de0a2513b06da);
+            
+        
+
+        marker_b6c2d8de444343d9d4e628c069738cdf.bindPopup(popup_38334b5d98898cb86ae57151b9d6cde3)
+        ;
+
+        
+    
+    
+            var marker_6d273561d5d4222083a0779c5d6dd554 = L.marker(
+                [55.69167, 37.53433],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_9b4cb07c495aa93e1c4db2de9a4596ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6d273561d5d4222083a0779c5d6dd554.setIcon(icon_9b4cb07c495aa93e1c4db2de9a4596ab);
+        
+    
+        var popup_f5f27f9e18ed5fb62b1ada7049b9df81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0938f4c1ae9be6bb180125d14a3577fa = $(`<div id="html_0938f4c1ae9be6bb180125d14a3577fa" style="width: 100.0%; height: 100.0%;">Университет (55.69167, 37.53433) - Юго-Западный административный округ</div>`)[0];
+                popup_f5f27f9e18ed5fb62b1ada7049b9df81.setContent(html_0938f4c1ae9be6bb180125d14a3577fa);
+            
+        
+
+        marker_6d273561d5d4222083a0779c5d6dd554.bindPopup(popup_f5f27f9e18ed5fb62b1ada7049b9df81)
+        ;
+
+        
+    
+    
+            var marker_1c7c2e2e256bc342ff5cc88daf27f466 = L.marker(
+                [55.65381, 37.62084],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_e5150d158f199582cc24dd0827dc62f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c7c2e2e256bc342ff5cc88daf27f466.setIcon(icon_e5150d158f199582cc24dd0827dc62f1);
+        
+    
+        var popup_6e89a8277629951fd0ea17c89767689e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3c0627a9091546b6118906a49853b6d = $(`<div id="html_d3c0627a9091546b6118906a49853b6d" style="width: 100.0%; height: 100.0%;">Варшавская (55.65381, 37.62084) - Южный административный округ</div>`)[0];
+                popup_6e89a8277629951fd0ea17c89767689e.setContent(html_d3c0627a9091546b6118906a49853b6d);
+            
+        
+
+        marker_1c7c2e2e256bc342ff5cc88daf27f466.bindPopup(popup_6e89a8277629951fd0ea17c89767689e)
+        ;
+
+        
+    
+    
+            var marker_d1f7a6d178221e2d3a7878e843d0d403 = L.marker(
+                [55.82177, 37.64107],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_2352574044679994b948ba6a86a7b732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d1f7a6d178221e2d3a7878e843d0d403.setIcon(icon_2352574044679994b948ba6a86a7b732);
+        
+    
+        var popup_02e24ea637ead45b63947f35df468d42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cb5adb508d15d67d0e7e814d7a9d7d7 = $(`<div id="html_2cb5adb508d15d67d0e7e814d7a9d7d7" style="width: 100.0%; height: 100.0%;">ВДНХ (55.82177, 37.64107) - Северо-Восточный административный округ</div>`)[0];
+                popup_02e24ea637ead45b63947f35df468d42.setContent(html_2cb5adb508d15d67d0e7e814d7a9d7d7);
+            
+        
+
+        marker_d1f7a6d178221e2d3a7878e843d0d403.bindPopup(popup_02e24ea637ead45b63947f35df468d42)
+        ;
+
+        
+    
+    
+            var marker_1b7ff7b9b901f0c5945b2973958ac77b = L.marker(
+                [55.67613, 37.5045],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_379ea265fff9861df9adfb51a16bbc7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_1b7ff7b9b901f0c5945b2973958ac77b.setIcon(icon_379ea265fff9861df9adfb51a16bbc7a);
+        
+    
+        var popup_c08b430a8861a82a1f38398afcb37b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdbd3dc4c13c8eb11031ebc8e1896a8b = $(`<div id="html_fdbd3dc4c13c8eb11031ebc8e1896a8b" style="width: 100.0%; height: 100.0%;">Проспект Вернадского (55.67613, 37.5045) - Западный административный округ</div>`)[0];
+                popup_c08b430a8861a82a1f38398afcb37b66.setContent(html_fdbd3dc4c13c8eb11031ebc8e1896a8b);
+            
+        
+
+        marker_1b7ff7b9b901f0c5945b2973958ac77b.bindPopup(popup_c08b430a8861a82a1f38398afcb37b66)
+        ;
+
+        
+    
+    
+            var marker_b1895b03cb45fb572b6dd0f7e91d55cb = L.marker(
+                [55.84669, 37.59251],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_383a513eab72bc4f6d7035837c41d3c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b1895b03cb45fb572b6dd0f7e91d55cb.setIcon(icon_383a513eab72bc4f6d7035837c41d3c1);
+        
+    
+        var popup_66c71abfe00b6107757dac37ea64bd55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea8900e854177993c681cd70802af948 = $(`<div id="html_ea8900e854177993c681cd70802af948" style="width: 100.0%; height: 100.0%;">Владыкино (55.84669, 37.59251) - Северо-Восточный административный округ</div>`)[0];
+                popup_66c71abfe00b6107757dac37ea64bd55.setContent(html_ea8900e854177993c681cd70802af948);
+            
+        
+
+        marker_b1895b03cb45fb572b6dd0f7e91d55cb.bindPopup(popup_66c71abfe00b6107757dac37ea64bd55)
+        ;
+
+        
+    
+    
+            var marker_40ac0a78faaaede091b74a8a73957368 = L.marker(
+                [55.8386, 37.48749],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_102065e1c6906086ce455b9a8a9d842c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_40ac0a78faaaede091b74a8a73957368.setIcon(icon_102065e1c6906086ce455b9a8a9d842c);
+        
+    
+        var popup_900d0ee0cffe6fae16f8c24ad847ee15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2cefff26fcc7e95931b3b63987bcd02 = $(`<div id="html_b2cefff26fcc7e95931b3b63987bcd02" style="width: 100.0%; height: 100.0%;">Водный стадион (55.8386, 37.48749) - Северный административный округ</div>`)[0];
+                popup_900d0ee0cffe6fae16f8c24ad847ee15.setContent(html_b2cefff26fcc7e95931b3b63987bcd02);
+            
+        
+
+        marker_40ac0a78faaaede091b74a8a73957368.bindPopup(popup_900d0ee0cffe6fae16f8c24ad847ee15)
+        ;
+
+        
+    
+    
+            var marker_e541775d538aaef82b1ade7903c5f00b = L.marker(
+                [55.81811, 37.49905],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_ded1d4fca10d8ac90def0e553f463db6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e541775d538aaef82b1ade7903c5f00b.setIcon(icon_ded1d4fca10d8ac90def0e553f463db6);
+        
+    
+        var popup_c92b73dcbff5794d9ec1adec8a1d50a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9438bcf063f1d7df369fe81c9120f289 = $(`<div id="html_9438bcf063f1d7df369fe81c9120f289" style="width: 100.0%; height: 100.0%;">Войковская (55.81811, 37.49905) - Северный административный округ</div>`)[0];
+                popup_c92b73dcbff5794d9ec1adec8a1d50a7.setContent(html_9438bcf063f1d7df369fe81c9120f289);
+            
+        
+
+        marker_e541775d538aaef82b1ade7903c5f00b.bindPopup(popup_c92b73dcbff5794d9ec1adec8a1d50a7)
+        ;
+
+        
+    
+    
+            var marker_4b22df34752d8afd7100242fe4f034cc = L.marker(
+                [55.83459, 37.38367],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_808d51e93d6c7cd7772a2cb771399d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4b22df34752d8afd7100242fe4f034cc.setIcon(icon_808d51e93d6c7cd7772a2cb771399d51);
+        
+    
+        var popup_0eb9550a942a105e1b7a3f5728ea6383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_975d115ce2f072bebf09b36bd55c9045 = $(`<div id="html_975d115ce2f072bebf09b36bd55c9045" style="width: 100.0%; height: 100.0%;">Волоколамская (стр.) (55.83459, 37.38367) - NOT FOUND</div>`)[0];
+                popup_0eb9550a942a105e1b7a3f5728ea6383.setContent(html_975d115ce2f072bebf09b36bd55c9045);
+            
+        
+
+        marker_4b22df34752d8afd7100242fe4f034cc.bindPopup(popup_0eb9550a942a105e1b7a3f5728ea6383)
+        ;
+
+        
+    
+    
+            var marker_c67154aa6eeb340c656e8c22a1813856 = L.marker(
+                [55.7243, 37.68795],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_8a9058d04dc1379dd49b1fd1ce2ca216 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c67154aa6eeb340c656e8c22a1813856.setIcon(icon_8a9058d04dc1379dd49b1fd1ce2ca216);
+        
+    
+        var popup_30111bfd961de518647dc3042a17392a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49be494022f8ffd3567e2a68a3ddab70 = $(`<div id="html_49be494022f8ffd3567e2a68a3ddab70" style="width: 100.0%; height: 100.0%;">Волгоградский проспект (55.7243, 37.68795) - NOT FOUND</div>`)[0];
+                popup_30111bfd961de518647dc3042a17392a.setContent(html_49be494022f8ffd3567e2a68a3ddab70);
+            
+        
+
+        marker_c67154aa6eeb340c656e8c22a1813856.bindPopup(popup_30111bfd961de518647dc3042a17392a)
+        ;
+
+        
+    
+    
+            var marker_1aa45d22448c265dbb977f4048f5ad5e = L.marker(
+                [55.69101, 37.75498],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7c0e85354afb7fbac5791b2762b32899 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_1aa45d22448c265dbb977f4048f5ad5e.setIcon(icon_7c0e85354afb7fbac5791b2762b32899);
+        
+    
+        var popup_475573a7bae5e8e30ea239f335d7f1b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b409e4e6aa1a8d575d8e79ee0fdd04a = $(`<div id="html_0b409e4e6aa1a8d575d8e79ee0fdd04a" style="width: 100.0%; height: 100.0%;">Волжская (55.69101, 37.75498) - Юго-Восточный административный округ</div>`)[0];
+                popup_475573a7bae5e8e30ea239f335d7f1b3.setContent(html_0b409e4e6aa1a8d575d8e79ee0fdd04a);
+            
+        
+
+        marker_1aa45d22448c265dbb977f4048f5ad5e.bindPopup(popup_475573a7bae5e8e30ea239f335d7f1b3)
+        ;
+
+        
+    
+    
+            var marker_8cc1d8072fec66d88328297e4da1aad7 = L.marker(
+                [55.710454, 37.558601],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_75754307684f427f9078f083e23fefb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8cc1d8072fec66d88328297e4da1aad7.setIcon(icon_75754307684f427f9078f083e23fefb9);
+        
+    
+        var popup_6166ab9decb445747eeb6c90acdb4f9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_661b7d1850bbdcd51ecb73b3ebdc96f1 = $(`<div id="html_661b7d1850bbdcd51ecb73b3ebdc96f1" style="width: 100.0%; height: 100.0%;">Воробьёвы горы (55.710454, 37.558601) - Центральный административный округ</div>`)[0];
+                popup_6166ab9decb445747eeb6c90acdb4f9a.setContent(html_661b7d1850bbdcd51ecb73b3ebdc96f1);
+            
+        
+
+        marker_8cc1d8072fec66d88328297e4da1aad7.bindPopup(popup_6166ab9decb445747eeb6c90acdb4f9a)
+        ;
+
+        
+    
+    
+            var marker_7672dd70372c0493f45d362c2ff388b2 = L.marker(
+                [55.715, 37.81802],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_11c2daf8c83b895cdb8aa54481f20bb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_7672dd70372c0493f45d362c2ff388b2.setIcon(icon_11c2daf8c83b895cdb8aa54481f20bb5);
+        
+    
+        var popup_212f33e79a09b1e5a838355fd70674f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_060008ebf6f790bcff5373a1e38801f0 = $(`<div id="html_060008ebf6f790bcff5373a1e38801f0" style="width: 100.0%; height: 100.0%;">Выхино (55.715, 37.81802) - NOT FOUND</div>`)[0];
+                popup_212f33e79a09b1e5a838355fd70674f1.setContent(html_060008ebf6f790bcff5373a1e38801f0);
+            
+        
+
+        marker_7672dd70372c0493f45d362c2ff388b2.bindPopup(popup_212f33e79a09b1e5a838355fd70674f1)
+        ;
+
+        
+    
+    
+            var marker_d2f5622aef7757381f4501936fe3b590 = L.marker(
+                [55.60535, 37.53494],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_58ebdd216d341b235fb3be469fb959d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d2f5622aef7757381f4501936fe3b590.setIcon(icon_58ebdd216d341b235fb3be469fb959d4);
+        
+    
+        var popup_e0192c15a7be8e0543218a882fd780d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b2ec9cafb19e63be9ff75fca6030c12 = $(`<div id="html_7b2ec9cafb19e63be9ff75fca6030c12" style="width: 100.0%; height: 100.0%;">Ясенево (55.60535, 37.53494) - Юго-Западный административный округ</div>`)[0];
+                popup_e0192c15a7be8e0543218a882fd780d9.setContent(html_7b2ec9cafb19e63be9ff75fca6030c12);
+            
+        
+
+        marker_d2f5622aef7757381f4501936fe3b590.bindPopup(popup_e0192c15a7be8e0543218a882fd780d9)
+        ;
+
+        
+    
+    
+            var marker_56043de3852e6af74e006a706d3a1595 = L.marker(
+                [55.66464, 37.48421],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_7cd3b509fc0ae24cf8640391eb692e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_56043de3852e6af74e006a706d3a1595.setIcon(icon_7cd3b509fc0ae24cf8640391eb692e33);
+        
+    
+        var popup_bb07f1972dd612dac2cf47cd1e2a5cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ebda925e1ab5458854691491bf69602 = $(`<div id="html_6ebda925e1ab5458854691491bf69602" style="width: 100.0%; height: 100.0%;">Юго-западная (55.66464, 37.48421) - NOT FOUND</div>`)[0];
+                popup_bb07f1972dd612dac2cf47cd1e2a5cb7.setContent(html_6ebda925e1ab5458854691491bf69602);
+            
+        
+
+        marker_56043de3852e6af74e006a706d3a1595.bindPopup(popup_bb07f1972dd612dac2cf47cd1e2a5cb7)
+        ;
+
+        
+    
+    
+            var marker_1224b1dda7827657652417f14e5b6e0c = L.marker(
+                [55.62122, 37.60752],
+                {}
+            ).addTo(map_a3139c2e8eec9e18e85859a6cabe3e0f);
+        
+    
+            var icon_cbaf67b22b728aa5561c4838c1dec4f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1224b1dda7827657652417f14e5b6e0c.setIcon(icon_cbaf67b22b728aa5561c4838c1dec4f9);
+        
+    
+        var popup_ea1e9a9cffa7a7cd972552231c012893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fd75453a5f50f4ea3e6f683de7c7bd6 = $(`<div id="html_3fd75453a5f50f4ea3e6f683de7c7bd6" style="width: 100.0%; height: 100.0%;">Южная (55.62122, 37.60752) - Южный административный округ</div>`)[0];
+                popup_ea1e9a9cffa7a7cd972552231c012893.setContent(html_3fd75453a5f50f4ea3e6f683de7c7bd6);
+            
+        
+
+        marker_1224b1dda7827657652417f14e5b6e0c.bindPopup(popup_ea1e9a9cffa7a7cd972552231c012893)
+        ;
+
+        
+    
+</script>
+</html>
