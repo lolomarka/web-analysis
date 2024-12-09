@@ -167,3 +167,6 @@ cython_debug/
 *.tar.gz
 */louvre
 */louvre_dataset
+*.json
+*.mp4
+geckodriver
